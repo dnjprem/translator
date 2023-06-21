@@ -124,6 +124,7 @@ public class PhraseCategoryAdapter extends RecyclerView.Adapter<PhraseCategoryAd
         holder.img_source_speak.setOnClickListener(view -> {
             if (item.isTranslated()) {
                 convertTextToSpeech.textToSpeak(item.getTargetText());
+//                new ConvertTextToSpeech(view.getContext(), targetCode, item.getTargetText());
             }
         });
     }

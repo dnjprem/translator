@@ -70,12 +70,12 @@ public class HistoryActivity extends AppCompatActivity {
             if (favoriteList.size() > 0) {
                 layout_background.setVisibility(View.GONE);
             }
-            adapter = new HistoryAdapter(helper, favoriteList);
+            adapter = new HistoryAdapter(helper, favoriteList, isFavoriteScreen);
         } else {
             if (histories.size() > 0) {
                 layout_background.setVisibility(View.GONE);
             }
-            adapter = new HistoryAdapter(helper, histories);
+            adapter = new HistoryAdapter(helper, histories, isFavoriteScreen);
         }
 
         history_rcv.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false));

@@ -1,6 +1,7 @@
 package com.google.mlkit.samples.nl.translate.java.adapter;
 
 import android.annotation.SuppressLint;
+import android.os.SystemClock;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -14,6 +15,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.google.mlkit.samples.nl.translate.R;
 import com.google.mlkit.samples.nl.translate.java.model.Conversation;
+import com.google.mlkit.samples.nl.translate.java.utils.ConvertConversationTextToSpeech;
 import com.google.mlkit.samples.nl.translate.java.utils.GeneralPreference;
 
 import java.text.SimpleDateFormat;
@@ -23,6 +25,9 @@ import java.util.Date;
 public class ConversationAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
 
     ArrayList<Object> conversationList;
+    private long mSourceLastClickTime = 0;
+    private long mTargetLastClickTime = 0;
+
 
     private static final int TYPE_ITEM_DATE_CONTAINER = 0; // for DateTime View
     private static final int TYPE_ITEM_CONVERSATION = 1; // for Conversation View
@@ -65,6 +70,20 @@ public class ConversationAdapter extends RecyclerView.Adapter<RecyclerView.ViewH
                     holder.text_first_target_code.setText(item.getTargetCode().toUpperCase());
                     holder.text_first_target_text.setText(item.getTargetText());
                     holder.text_source_time.setText(getTime(item.getSourceDate()));
+                    holder.img_first_source_speak.setOnClickListener(view -> {
+                        if (SystemClock.elapsedRealtime() - mSourceLastClickTime < 1500) {
+                            return;
+                        }
+                        mSourceLastClickTime = SystemClock.elapsedRealtime();
+                        pressedOnClick(view, item.getSourceCode(), item.getSourceText());
+                    });
+                    holder.img_first_target_speak.setOnClickListener(view -> {
+                        if (SystemClock.elapsedRealtime() - mTargetLastClickTime < 1500) {
+                            return;
+                        }
+                        mTargetLastClickTime = SystemClock.elapsedRealtime();
+                        pressedOnClick(view, item.getTargetCode(), item.getTargetText());
+                    });
                 }
 
                 if (item.getIsSource() == 1) {
@@ -80,15 +99,34 @@ public class ConversationAdapter extends RecyclerView.Adapter<RecyclerView.ViewH
                     holder.text_second_target_code.setText(item.getTargetCode().toUpperCase());
                     holder.text_second_target_text.setText(item.getTargetText());
                     holder.text_target_time.setText(getTime(item.getTargetDate()));
+                    holder.img_second_source_speak.setOnClickListener(view -> {
+                        if (SystemClock.elapsedRealtime() - mSourceLastClickTime < 1500) {
+                            return;
+                        }
+                        mSourceLastClickTime = SystemClock.elapsedRealtime();
+                        pressedOnClick(view, item.getSourceCode(), item.getSourceText());
+                    });
+                    holder.img_second_target_speak.setOnClickListener(view -> {
+                        if (SystemClock.elapsedRealtime() - mTargetLastClickTime < 1500) {
+                            return;
+                        }
+                        mTargetLastClickTime = SystemClock.elapsedRealtime();
+                        pressedOnClick(view, item.getTargetCode(), item.getTargetText());
+                    });
                 }
-
             }
+
+
         } else if (conversationList.get(position) instanceof String) {
             DateContainerViewHolder holder = (DateContainerViewHolder) viewHolder;
             String item = (String) conversationList.get(position);
             holder.text_date_time.setText(item);
         }
 
+    }
+
+    private void pressedOnClick(View view, String code, String text) {
+        new ConvertConversationTextToSpeech(view.getContext(), code, text);
     }
 
     @Override

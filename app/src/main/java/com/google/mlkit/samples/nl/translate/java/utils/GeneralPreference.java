@@ -120,6 +120,16 @@ public class GeneralPreference {
         }
     }
 
+    public static int isDateExist(ArrayList<Object> finalList, String date) {
+        format(date);
+        int dateCount = 0;
+        for (Object item : finalList) {
+            if (item instanceof String && ((String) item).equals(date)) {
+                return dateCount++;
+            }
+        }
+        return dateCount;
+    }
     private static boolean isExist(ArrayList<Object> finalList, String date) {
         for (Object item : finalList) {
             if (item instanceof String && ((String) item).equals(date)) {

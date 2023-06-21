@@ -108,6 +108,12 @@
         <item name="android:includeFontPadding">false</item>
         <item name="android:textSize">14sp</item>
     </style>
+    <style name="ConversationSourceTimeTextStyle">
+        <item name="fontFamily">@font/plus_jakarta_sans_medium</item>
+        <item name="android:textColor">@color/colorThirdDark</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:textSize">12sp</item>
+    </style>
 
     <style name="ConversationTargetTextStyle">
         <item name="fontFamily">@font/plus_jakarta_sans_bold</item>

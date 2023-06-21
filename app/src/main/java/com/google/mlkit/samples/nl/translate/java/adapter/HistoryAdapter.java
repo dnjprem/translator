@@ -22,14 +22,15 @@ public class HistoryAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder
 
     ArrayList<Object> histories;
     DataBaseHelper helper;
-
+    boolean isFavoriteScreen;
 
     private static final int TYPE_ITEM_DATE_CONTAINER = 0; // for DateTime View
     private static final int TYPE_ITEM_HISTORY = 1; // for Conversation View
 
-    public HistoryAdapter(DataBaseHelper helper, ArrayList<History> histories) {
+    public HistoryAdapter(DataBaseHelper helper, ArrayList<History> histories, boolean isFavoriteScreen) {
         this.histories = GeneralPreference.sortHistories(histories);
         this.helper = helper;
+        this.isFavoriteScreen = isFavoriteScreen;
     }
 
     @NonNull
@@ -58,11 +59,18 @@ public class HistoryAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder
                 holder.img_favorite.setImageResource(R.drawable.ic_like);
             }
 
-            holder.img_favorite.setOnClickListener(view -> {
-                item.setIsFavorite(setFavorite(item.getIsFavorite()));
-                updateHistory(item.getId(), item.getIsFavorite(), position);
-            });
 
+            if (isFavoriteScreen) {
+                holder.img_favorite.setOnClickListener(view -> {
+                    item.setIsFavorite(setFavorite(item.getIsFavorite()));
+                    removeHistory(item.getId(), item.getIsFavorite(), position);
+                });
+            } else {
+                holder.img_favorite.setOnClickListener(view -> {
+                    item.setIsFavorite(setFavorite(item.getIsFavorite()));
+                    updateHistory(item.getId(), item.getIsFavorite(), position);
+                });
+            }
 
             if (holder.getItemViewType() == TYPE_ITEM_HISTORY) {
                 holder.text_source_language.setText(new Locale(item.getSourceCode()).getDisplayName());
@@ -91,7 +99,6 @@ public class HistoryAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder
         } else {
             return TYPE_ITEM_DATE_CONTAINER;
         }
-
     }
 
     public static class MyViewHolder extends RecyclerView.ViewHolder {
@@ -131,6 +138,16 @@ public class HistoryAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder
     public void updateHistory(int id, int isFav, int pos) {
         helper.updateHistoryData(id, isFav);
         notifyItemChanged(pos);
+    }
+
+    public void removeHistory(int id, int isFav, int position) {
+        History item = (History) histories.get(position);
+        int dateCount = GeneralPreference.isDateExist(histories, item.getSourceDate());
+        Log.d("=================> ", "Date Count is - " + dateCount);
+
+        helper.updateHistoryData(id, isFav);
+//        histories.remove(position);
+        notifyDataSetChanged();
     }
 
 }
