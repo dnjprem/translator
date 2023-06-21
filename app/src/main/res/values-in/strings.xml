@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="text_select_country">Pilih Kabupaten</string>
+    <string name="text_search">Telusuri</string>
+    <string name="text_all_country">Semua Negara</string>
+    <string name="text_no_country_found">Negara Tidak Ditemukan…</string>
+    <string name="select_app_language">Pilih Bahasa Aplikasi</string>
+    <string name="system_default">Standar Sistem</string>
+    <string name="all_language">Semua Bahasa</string>
+
+    <string name="text_onboard_first_title">Pidato dan Terjemahkan</string>
+    <string name="text_fir_onboard_first_sub_title">Bahasa lisan dikonversi menjadi Teks</string>
+    <string name="text_sec_onboard_first_sub_title">dan kemudian akan Diterjemahkan.</string>
+
+    <string name="text_onboard_second_title">Terjemahkan Teks Ke Ucapan</string>
+    <string name="text_fir_onboard_sec_sub_title">Ambil teks sebagai Input, Terjemahkan,</string>
+    <string name="text_sec_onboard_sec_sub_title">Dan berikan ucapan Audible sebagai keluaran</string>
+
+    <string name="text_onboard_third_title">Bagikan Teks Terjemahan Anda</string>
+    <string name="text_fir_onboard_third_sub_title">Bagikan Pidato Terjemahan Anda dengan</string>
+    <string name="text_sec_onboard_third_sub_title">Teman Anda Menggunakan Penerjemah Bahasa</string>
+
+    <string name="text_next">Selanjutnya</string>
+    <string name="text_say_something">Katakan Sesuatu…</string>
+    <string name="text_device_not_support">Perangkat Anda Tidak Mendukung Fungsi Ucapan</string>
+    <string name="text_lets_start">Mari Mulai</string>
+    <string name="text_translate_language">Terjemahkan Bahasa</string>
+    <string name="text_rate_app">Nilai Aplikasi</string>
+    <string name="text_rating_and_review">Penilaian dan Ulasan</string>
+    <string name="text_with_your_friends">dengan teman Anda</string>
+    <string name="translated_text_hint">Teks yang diterjemahkan</string>
+    <string name="unknown_error">Terjadi kesalahan yang tidak diketahui.</string>
+    <string name="source_text_hint">Masukkan teks</string>
+    <string name="text_phrases">Frasa</string>
+    <string name="text_conversation">Percakapan</string>
+    <string name="text_setting">Pengaturan</string>
+    <string name="text_translate">Terjemahkan</string>
+    <string name="text_phrase_book">Buku Frasa</string>
+    <string name="text_essentials">Esensial</string>
+    <string name="app_languages">Bahasa</string>
+    <string name="selected">Dipilih</string>
+    <string name="text_greetings">Salam</string>
+    <string name="text_basic">Dasar</string>
+    <string name="text_copied">Teks Disalin</string>
+    <string name="text_not_found">Teks Tidak Ditemukan</string>
+    <string name="text_select_the_country">Pilih Negara</string>
+    <string name="text_please_download_language_first">Harap unduh bahasa terlebih dahulu</string>
+    <string name="text_downloading_start">Mulai Mengunduh</string>
+    <string name="text_already_downloaded">Sudah Diunduh</string>
+    <string name="text_download_successfully">Unduh Berhasil</string>
+    <string name="text_app_themes">Tema Aplikasi</string>
+    <string name="text_history">Riwayat</string>
+    <string name="text_share_app">Bagikan Aplikasi</string>
+    <string name="text_rate">Nilai Kami</string>
+    <string name="text_privacy">Kebijakan Privasi</string>
+    <string name="text_start_conversation">Mulai Percakapan Anda</string>
+    <string name="text_tap_mic_button_to_start_conversation">Ketuk tombol mikrofon untuk memulai percakapan</string>
+    <string name="text_translating">Menerjemahkan…</string>
+    <string name="text_favorite">Favorit</string>
+    <string name="text_no_history">Riwayat Tidak Ditemukan</string>
+    <string name="text_make_translation_history">Silakan Mulai Terjemahan</string>
+    <string name="text_no_favorite">Tidak Ditemukan Terjemahan Favorit</string>
+    <string name="text_make_translation_favorite">Jadikan Terjemahan Anda Favorit</string>
+</resources>

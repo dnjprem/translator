@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="translated_text_hint">अनुवादित पाठ</string>
+    <string name="unknown_error">अज्ञात त्रुटि हुई।</string>
+    <string name="source_text_hint">पाठ दर्ज कीजिए</string>
+    <string name="select_app_language">ऐप भाषा का चयन कीजिए</string>
+    <string name="system_default">प्रणालीगत चूक</string>
+    <string name="all_language">सारी भाषाएँ</string>
+    <string name="text_phrases">मुहावरा</string>
+    <string name="text_conversation">बातचीत</string>
+    <string name="text_setting">समायोजन</string>
+    <string name="text_translate">अनुवाद</string>
+    <string name="text_phrase_book">वाक्यांश पुस्तक</string>
+    <string name="text_essentials">अनिवार्य</string>
+    <string name="app_languages">भाषाएँ</string>
+    <string name="selected">चयनित</string>
+    <string name="text_greetings">अभिवादन</string>
+    <string name="text_basic">बुनियादी</string>
+    <string name="text_app_themes">ऐप थीम</string>
+    <string name="text_history">इतिहास</string>
+    <string name="text_share_app">ऐप को शेयर करें</string>
+    <string name="text_rate">हमें रेटिंग दें</string>
+    <string name="text_privacy">गोपनीयता नीति</string>
+    <string name="text_start_conversation">अपनी बातचीत शुरू करें</string>
+    <string name="text_tap_mic_button_to_start_conversation">बातचीत शुरू करने के लिए माइक बटन पर टैप करें</string>
+    <string name="text_translating">अनुवाद हो रहा है…</string>
+    <string name="text_favorite">पसंदीदा</string>
+    <string name="text_select_country">देश का चयन कीजिए</string>
+    <string name="text_search">खोज करे</string>
+    <string name="text_all_country">सभी देश</string>
+    <string name="text_no_country_found">कोई देश नहीं मिला…</string>
+
+    <string name="text_onboard_first_title">बोलिए और अनुवाद कीजिए</string>
+    <string name="text_fir_onboard_first_sub_title">बोली हुई भाषा को शब्द में बदलेगा</string>
+    <string name="text_sec_onboard_first_sub_title">और अनुवाद कर देगा।</string>
+
+    <string name="text_onboard_second_title">अनुवादित शब्द को बोलना</string>
+    <string name="text_fir_onboard_sec_sub_title">शब्द को इनपुट रूप में लेना, अनुवाद करना</string>
+    <string name="text_sec_onboard_sec_sub_title">और ऑडिबल स्पीच में आउटपुट देना।</string>
+
+    <string name="text_onboard_third_title">अपने अनुवाद को शेयर कीजिए</string>
+    <string name="text_fir_onboard_third_sub_title">भाषा अनुवादक का उपयोग करके अपने अनुवाद को</string>
+    <string name="text_sec_onboard_third_sub_title">अपने दोस्तों के साथ शेयर कीजिए।</string>
+
+    <string name="text_say_something">कुछ बोलिए…</string>
+    <string name="text_device_not_support">बोलने की कार्यक्षमता आपके उपकरण में समर्थित नहीं है</string>
+    <string name="text_lets_start">प्रारंभ करे</string>
+    <string name="text_translate_language">भाषा का अनुवाद करे</string>
+    <string name="text_rate_app">ऐप को रेटिंग दे</string>
+    <string name="text_rating_and_review">रेटिंग और समीक्षा</string>
+    <string name="text_with_your_friends">अपने मित्रों के साथ</string>
+    <string name="text_no_history">कोई इतिहास नहीं मिला</string>
+    <string name="text_make_translation_history">कृपया अनुवाद करना शुरू कीजिए</string>
+    <string name="text_no_favorite">कोई पसंदीदा अनुवाद नहीं मिला</string>
+    <string name="text_make_translation_favorite">अपने अनुवादों को पसंदिदा बनाएं</string>
+    <string name="text_copied">कॉपी हो चुका है</string>
+    <string name="text_not_found">कोई लेख नहीं मिला</string>
+    <string name="text_select_the_country">देश का चयन कीजिए</string>
+    <string name="text_please_download_language_first">कृपया पहले भाषा डाउनलोड कीजिए</string>
+    <string name="text_downloading_start">डाउनलोड करना शुरू कर दिया है</string>
+    <string name="text_already_downloaded">पहले से डाउनलोड है</string>
+    <string name="text_download_successfully">सफलतापूर्वक डाउनलोड किया गया है</string>
+    <string name="text_next">आगे बढ़िए</string>
+</resources>

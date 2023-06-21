@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="text_select_country">Vyberte kraj</string>
+    <string name="text_search">Hľadať</string>
+    <string name="text_all_country">Celá krajina</string>
+    <string name="text_no_country_found">Krajina sa nenašla…</string>
+    <string name="select_app_language">Vyberte jazyk aplikácie</string>
+    <string name="system_default">Predvolené nastavenie systému</string>
+    <string name="all_language">Všetky jazyky</string>
+
+    <string name="text_onboard_first_title">Reč a preklad</string>
+    <string name="text_fir_onboard_first_sub_title">Hovorený jazyk prevedený na text</string>
+    <string name="text_sec_onboard_first_sub_title">a potom bude preložený.</string>
+
+    <string name="text_onboard_second_title">Preložiť text do reči</string>
+    <string name="text_fir_onboard_sec_sub_title">Prijať text ako vstup, preklad,</string>
+    <string name="text_sec_onboard_sec_sub_title">A ako výstup poskytnúť počuteľnú reč</string>
+
+    <string name="text_onboard_third_title">Zdieľajte svoj preklad textu</string>
+    <string name="text_fir_onboard_third_sub_title">Zdieľajte svoj prejav v preklade s</string>
+    <string name="text_sec_onboard_third_sub_title">Vaši priatelia používajú prekladač jazykov</string>
+
+    <string name="text_next">Ďalej</string>
+    <string name="text_say_something">Povedz niečo…</string>
+    <string name="text_device_not_support">Vaše zariadenie nepodporuje funkciu reči</string>
+    <string name="text_lets_start">Začnime</string>
+    <string name="text_translate_language">Jazyk prekladu</string>
+    <string name="text_rate_app">Ohodnoťte aplikáciu</string>
+    <string name="text_rating_and_review">Hodnotenie a recenzia</string>
+    <string name="text_with_your_friends">s priateľmi</string>
+    <string name="translated_text_hint">Preložený text</string>
+    <string name="unknown_error">Vyskytla sa neznáma chyba.</string>
+    <string name="source_text_hint">Zadajte text</string>
+    <string name="text_phrases">Frázy</string>
+    <string name="text_conversation">Konverzácia</string>
+    <string name="text_setting">Nastavenia</string>
+    <string name="text_translate">Preložiť</string>
+    <string name="text_phrase_book">Frázovník</string>
+    <string name="text_essentials">Základy</string>
+    <string name="app_languages">Jazyky</string>
+    <string name="selected">Vybraté</string>
+    <string name="text_greetings">Zdravím vás</string>
+    <string name="text_basic">Základné</string>
+    <string name="text_copied">Text bol skopírovaný</string>
+    <string name="text_not_found">Text sa nenašiel</string>
+    <string name="text_select_the_country">Vyberte krajinu</string>
+    <string name="text_please_download_language_first">Najskôr si stiahnite jazyk</string>
+    <string name="text_downloading_start">Začať sťahovanie</string>
+    <string name="text_already_downloaded">Už stiahnuté</string>
+    <string name="text_download_successfully">Sťahovanie bolo úspešné</string>
+    <string name="text_app_themes">Motívy aplikácie</string>
+    <string name="text_history">História</string>
+    <string name="text_share_app">Zdieľať aplikáciu</string>
+    <string name="text_rate">Ohodnoťte nás</string>
+    <string name="text_privacy">Zásady ochrany osobných údajov</string>
+    <string name="text_start_conversation">Začnite konverzáciu</string>
+    <string name="text_tap_mic_button_to_start_conversation">Konverzáciu spustíte klepnutím na tlačidlo mikrofónu</string>
+    <string name="text_translating">Prekladá sa…</string>
+    <string name="text_favorite">Obľúbené</string>
+    <string name="text_no_history">Nenašla sa žiadna história</string>
+    <string name="text_make_translation_history">Spustite preklad</string>
+    <string name="text_no_favorite">Nenašiel sa žiadny obľúbený preklad</string>
+    <string name="text_make_translation_favorite">Nastavte svoj preklad ako obľúbený</string>
+</resources>

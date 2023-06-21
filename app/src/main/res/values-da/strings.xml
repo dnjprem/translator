@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="text_select_country">Vælg County</string>
+    <string name="text_search">Søg</string>
+    <string name="text_all_country">Alle lande</string>
+    <string name="text_no_country_found">Land blev ikke fundet…</string>
+    <string name="select_app_language">Vælg appsprog</string>
+    <string name="system_default">Systemstandard</string>
+    <string name="all_language">Alle sprog</string>
+
+    <string name="text_onboard_first_title">Tale og oversæt</string>
+    <string name="text_fir_onboard_first_sub_title">Talesprog konverteret til tekst</string>
+    <string name="text_sec_onboard_first_sub_title">og vil derefter blive oversat.</string>
+
+    <string name="text_onboard_second_title">Oversæt tekst til tale</string>
+    <string name="text_fir_onboard_sec_sub_title">Tag tekst som input, oversæt,</string>
+    <string name="text_sec_onboard_sec_sub_title">Og giv hørbar tale som output</string>
+
+    <string name="text_onboard_third_title">Del din oversættelsestekst</string>
+    <string name="text_fir_onboard_third_sub_title">Del din Translates-tale med</string>
+    <string name="text_sec_onboard_third_sub_title">Dine venner bruger sprogoversætter</string>
+
+    <string name="text_next">Næste</string>
+    <string name="text_say_something">Sig noget…</string>
+    <string name="text_device_not_support">Din enhed understøtter ikke talefunktionalitet</string>
+    <string name="text_lets_start">Lad os starte</string>
+    <string name="text_translate_language">Oversæt sprog</string>
+    <string name="text_rate_app">Vurder app</string>
+    <string name="text_rating_and_review">Bedømmelse og anmeldelse</string>
+    <string name="text_with_your_friends">med dine venner</string>
+    <string name="translated_text_hint">Oversat tekst</string>
+    <string name="unknown_error">Ukendt fejl opstod.</string>
+    <string name="source_text_hint">Indtast tekst</string>
+    <string name="text_phrases">Sætninger</string>
+    <string name="text_conversation">Samtale</string>
+    <string name="text_setting">Indstillinger</string>
+    <string name="text_translate">Oversæt</string>
+    <string name="text_phrase_book">Parlør</string>
+    <string name="text_essentials">Væsentlige oplysninger</string>
+    <string name="app_languages">Sprog</string>
+    <string name="selected">Valgt</string>
+    <string name="text_greetings">Hilsen</string>
+    <string name="text_basic">Grundlæggende</string>
+    <string name="text_copied">Tekst kopieret</string>
+    <string name="text_not_found">Teksten blev ikke fundet</string>
+    <string name="text_select_the_country">Vælg landet</string>
+    <string name="text_please_download_language_first">Download venligst sprog først</string>
+    <string name="text_downloading_start">Download start</string>
+    <string name="text_already_downloaded">Allerede downloadet</string>
+    <string name="text_download_successfully">Download lykkedes</string>
+    <string name="text_app_themes">App-temaer</string>
+    <string name="text_history">Historik</string>
+    <string name="text_share_app">Del app</string>
+    <string name="text_rate">Vurder os</string>
+    <string name="text_privacy">Privatlivspolitik</string>
+    <string name="text_start_conversation">Start din samtale</string>
+    <string name="text_tap_mic_button_to_start_conversation">Tryk på mikrofonknappen for at starte samtalen</string>
+    <string name="text_translating">Oversætter…</string>
+    <string name="text_favorite">Favorit</string>
+    <string name="text_no_history">Ingen historik fundet</string>
+    <string name="text_make_translation_history">Start venligst oversættelse</string>
+    <string name="text_no_favorite">Ingen favoritoversættelse fundet</string>
+    <string name="text_make_translation_favorite">Gør din oversættelse til favorit</string>
+</resources>

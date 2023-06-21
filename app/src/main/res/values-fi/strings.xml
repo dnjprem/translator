@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="text_select_country">Valitse maakunta</string>
+    <string name="text_search">Hae</string>
+    <string name="text_all_country">Kaikki maat</string>
+    <string name="text_no_country_found">Maaa ei löydy…</string>
+    <string name="select_app_language">Valitse Sovelluksen kieli</string>
+    <string name="system_default">Järjestelmän oletusarvo</string>
+    <string name="all_language">Kaikki kielet</string>
+
+    <string name="text_onboard_first_title">Puhu ja käännä</string>
+    <string name="text_fir_onboard_first_sub_title">Puhuttu kieli muutettu tekstiksi</string>
+    <string name="text_sec_onboard_first_sub_title">ja sitten se käännetään.</string>
+
+    <string name="text_onboard_second_title">Käännä teksti puheeksi</string>
+    <string name="text_fir_onboard_sec_sub_title">Ota tekstiä syötteenä, käännä,</string>
+    <string name="text_sec_onboard_sec_sub_title">Ja anna Audible-puhe ulostulona</string>
+
+    <string name="text_onboard_third_title">Käännöstekstisi jakaminen</string>
+    <string name="text_fir_onboard_third_sub_title">Jaa käännöspuheesi</string>
+    <string name="text_sec_onboard_third_sub_title">Ystäväsi kielikääntäjän avulla</string>
+
+    <string name="text_next">Seuraava</string>
+    <string name="text_say_something">Sano jotain…</string>
+    <string name="text_device_not_support">Laitteesi ei tue puhetoimintoa</string>
+    <string name="text_lets_start">Aloitetaan</string>
+    <string name="text_translate_language">Käännä kieli</string>
+    <string name="text_rate_app">Arvioi sovellus</string>
+    <string name="text_rating_and_review">Arvio ja arvostelu</string>
+    <string name="text_with_your_friends">ystävien kanssa</string>
+    <string name="translated_text_hint">Käännetty teksti</string>
+    <string name="unknown_error">Tapahtui tuntematon virhe.</string>
+    <string name="source_text_hint">Kirjoita teksti</string>
+    <string name="text_phrases">Lausekkeet</string>
+    <string name="text_conversation">Keskustelu</string>
+    <string name="text_setting">Asetukset</string>
+    <string name="text_translate">Käännä</string>
+    <string name="text_phrase_book">Sanakirja</string>
+    <string name="text_essentials">Essentials</string>
+    <string name="app_languages">Kielet</string>
+    <string name="selected">Valittu</string>
+    <string name="text_greetings">Tervehdys</string>
+    <string name="text_basic">Perus</string>
+    <string name="text_copied">Teksti kopioitu</string>
+    <string name="text_not_found">Tekstiä ei löydy</string>
+    <string name="text_select_the_country">Valitse maa</string>
+    <string name="text_please_download_language_first">Lataa ensin kieli</string>
+    <string name="text_downloading_start">Latauksen aloitus</string>
+    <string name="text_already_downloaded">Jo ladattu</string>
+    <string name="text_download_successfully">Lataus onnistui</string>
+    <string name="text_app_themes">Sovellusteemat</string>
+    <string name="text_history">Historia</string>
+    <string name="text_share_app">Jaa sovellus</string>
+    <string name="text_rate">Arvioi meidät</string>
+    <string name="text_privacy">Tietosuojakäytäntö</string>
+    <string name="text_start_conversation">Aloita keskustelusi</string>
+    <string name="text_tap_mic_button_to_start_conversation">Aloita keskustelu napauttamalla mikrofonipainiketta</string>
+    <string name="text_translating">Käännetään…</string>
+    <string name="text_favorite">Suosikki</string>
+    <string name="text_no_history">Historiaa ei löytynyt</string>
+    <string name="text_make_translation_history">Aloita käännös</string>
+    <string name="text_no_favorite">Suosikkikäännöstä ei löytynyt</string>
+    <string name="text_make_translation_favorite">Tee käännössuosikkisi</string>
+</resources>

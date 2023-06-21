@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="text_select_country">Seleccionar condado</string>
+    <string name="text_search">Buscar</string>
+    <string name="text_all_country">Todos los países</string>
+    <string name="text_no_country_found">País no encontrado…</string>
+    <string name="select_app_language">Seleccionar idioma de la aplicación</string>
+    <string name="system_default">Predeterminado del sistema</string>
+    <string name="all_language">Todos los idiomas</string>
+
+    <string name="text_onboard_first_title">Hablar y traducir</string>
+    <string name="text_fir_onboard_first_sub_title">Idioma hablado convertido en texto</string>
+    <string name="text_sec_onboard_first_sub_title">y luego será traducido.</string>
+
+    <string name="text_onboard_second_title">Traducir texto a voz</string>
+    <string name="text_fir_onboard_sec_sub_title">Tomar texto como Entrada, Traducir,</string>
+    <string name="text_sec_onboard_sec_sub_title">Y dar voz audible como salida</string>
+
+    <string name="text_onboard_third_title">Comparta su texto traducido</string>
+    <string name="text_fir_onboard_third_sub_title">Comparta su discurso traducido con</string>
+    <string name="text_sec_onboard_third_sub_title">Tus amigos usando el traductor de idiomas</string>
+
+    <string name="text_next">Siguiente</string>
+    <string name="text_say_something">Di algo…</string>
+    <string name="text_device_not_support">Su dispositivo no es compatible con la función de voz</string>
+    <string name="text_lets_start">Empecemos</string>
+    <string name="text_translate_language">Traducir idioma</string>
+    <string name="text_rate_app">Calificar aplicación</string>
+    <string name="text_rating_and_review">Calificación y revisión</string>
+    <string name="text_with_your_friends">con tus amigos</string>
+    <string name="translated_text_hint">Texto traducido</string>
+    <string name="unknown_error">Ocurrió un error desconocido.</string>
+    <string name="source_text_hint">Ingresar texto</string>
+    <string name="text_phrases">Frases</string>
+    <string name="text_conversation">Conversación</string>
+    <string name="text_setting">Configuración</string>
+    <string name="text_translate">Traducir</string>
+    <string name="text_phrase_book">Libro de frases</string>
+    <string name="text_essentials">Esenciales</string>
+    <string name="app_languages">Idiomas</string>
+    <string name="selected">Seleccionado</string>
+    <string name="text_greetings">Saludos</string>
+    <string name="text_basic">Básico</string>
+    <string name="text_copied">Texto copiado</string>
+    <string name="text_not_found">Texto no encontrado</string>
+    <string name="text_select_the_country">Seleccione el país</string>
+    <string name="text_please_download_language_first">Descargue primero el idioma</string>
+    <string name="text_downloading_start">Inicio de descarga</string>
+    <string name="text_already_downloaded">Ya descargado</string>
+    <string name="text_download_successfully">Descarga exitosa</string>
+    <string name="text_app_themes">Temas de aplicaciones</string>
+    <string name="text_history">Historia</string>
+    <string name="text_share_app">Compartir aplicación</string>
+    <string name="text_rate">Califícanos</string>
+    <string name="text_privacy">Política de Privacidad</string>
+    <string name="text_start_conversation">Inicia tu conversación</string>
+    <string name="text_tap_mic_button_to_start_conversation">Toca el botón del micrófono para iniciar la conversación</string>
+    <string name="text_translating">Traduciendo…</string>
+    <string name="text_favorite">Favorito</string>
+    <string name="text_no_history">No se encontró historial</string>
+    <string name="text_make_translation_history">Comience la traducción</string>
+    <string name="text_no_favorite">No se encontró ninguna traducción favorita</string>
+    <string name="text_make_translation_favorite">Haga su traducción favorita</string>
+</resources>

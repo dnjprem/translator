@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="text_select_country">郡を選択</string>
+    <string name="text_search">検索</string>
+    <string name="text_all_country">すべての国</string>
+    <string name="text_no_country_found">国が見つかりません…</string>
+    <string name="select_app_language">アプリの言語を選択</string>
+    <string name="system_default">システムデフォルト</string>
+    <string name="all_language">すべての言語</string>
+
+    <string name="text_onboard_first_title">音声と翻訳</string>
+    <string name="text_fir_onboard_first_sub_title">音声言語をテキストに変換</string>
+    <string name="text_sec_onboard_first_sub_title">その後翻訳されます。</string>
+
+    <string name="text_onboard_second_title">テキストを音声に翻訳する</string>
+    <string name="text_fir_onboard_sec_sub_title">テキストを入力、翻訳として取得します</string>
+    <string name="text_sec_onboard_sec_sub_title">出力として Audible 音声を提供します</string>
+
+    <string name="text_onboard_third_title">翻訳テキストを共有する</string>
+    <string name="text_fir_onboard_third_sub_title">翻訳スピーチを共有する</string>
+    <string name="text_sec_onboard_third_sub_title">言語翻訳ツールを使用している友達</string>
+
+    <string name="text_next">次へ</string>
+    <string name="text_say_something">何か言ってください…</string>
+    <string name="text_device_not_support">お使いのデバイスは音声機能をサポートしていません</string>
+    <string name="text_lets_start">始めましょう</string>
+    <string name="text_translate_language">言語を翻訳</string>
+    <string name="text_rate_app">アプリを評価</string>
+    <string name="text_rating_and_review">評価とレビュー</string>
+    <string name="text_with_your_friends">友達と一緒</string>
+    <string name="translated_text_hint">翻訳されたテキスト</string>
+    <string name="unknown_error">不明なエラーが発生しました。</string>
+    <string name="source_text_hint">テキストを入力</string>
+    <string name="text_phrases">フレーズ</string>
+    <string name="text_conversation">会話</string>
+    <string name="text_setting">設定</string>
+    <string name="text_translate">翻訳</string>
+    <string name="text_phrase_book">フレーズブック</string>
+    <string name="text_essentials">必需品</string>
+    <string name="app_languages">言語</string>
+    <string name="selected">選択済み</string>
+    <string name="text_greetings">ご挨拶</string>
+    <string name="text_basic">基本</string>
+    <string name="text_copied">テキストがコピーされました</string>
+    <string name="text_not_found">テキストが見つかりません</string>
+    <string name="text_select_the_country">国を選択してください</string>
+    <string name="text_please_download_language_first">最初に言語をダウンロードしてください</string>
+    <string name="text_downloading_start">ダウンロード開始</string>
+    <string name="text_already_downloaded">すでにダウンロードされています</string>
+    <string name="text_download_successfully">ダウンロードに成功しました</string>
+    <string name="text_app_themes">アプリのテーマ</string>
+    <string name="text_history">歴史</string>
+    <string name="text_share_app">アプリを共有</string>
+    <string name="text_rate">評価してください</string>
+    <string name="text_privacy">プライバシー ポリシー</string>
+    <string name="text_start_conversation">会話を開始します</string>
+    <string name="text_tap_mic_button_to_start_conversation">マイク ボタンをタップして会話を開始します</string>
+    <string name="text_translating">翻訳中…</string>
+    <string name="text_favorite">お気に入り</string>
+    <string name="text_no_history">履歴が見つかりません</string>
+    <string name="text_make_translation_history">翻訳を開始してください</string>
+    <string name="text_no_favorite">お気に入りの翻訳が見つかりません</string>
+    <string name="text_make_translation_favorite">翻訳をお気に入りに追加</string>
+</resources>

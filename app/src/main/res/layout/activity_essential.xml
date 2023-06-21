@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryLight"
+    tools:context=".java.activity.EssentialActivity">
+
+
+    <RelativeLayout
+        android:layout_marginHorizontal="@dimen/back_bar_margin"
+        android:id="@+id/layout_back"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/img_back"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_left_arrow" />
+
+
+        <TextView
+            style="@style/SelectLanguageSubTitleStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/img_back"
+            android:text="@string/text_essentials"
+            android:textSize="20dp" />
+
+    </RelativeLayout>
+
+
+    <com.google.android.material.tabs.TabLayout
+        app:tabRippleColor="@android:color/transparent"
+        android:id="@+id/layout_tab"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginStart="@dimen/normal_margin"
+        android:layout_marginEnd="@dimen/normal_margin"
+        android:background="@android:color/transparent"
+        app:layout_constraintTop_toBottomOf="@+id/layout_back"
+        app:tabBackground="@drawable/selected_tab"
+        app:tabGravity="start"
+        app:tabIndicatorHeight="0dp"
+        app:tabMode="scrollable"
+        app:tabPaddingEnd="20dp"
+        app:tabPaddingStart="20dp"
+        app:tabSelectedTextColor="@color/white"
+        app:tabTextAppearance="@style/TabFont" />
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/view_pager_category"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/normal_margin"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/layout_tab" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

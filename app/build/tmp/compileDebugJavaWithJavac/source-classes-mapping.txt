@@ -1,0 +1,120 @@
+com/google/mlkit/samples/nl/translate/java/model/History.java
+ com.google.mlkit.samples.nl.translate.java.model.History
+com/google/mlkit/samples/nl/translate/java/model/Country.java
+ com.google.mlkit.samples.nl.translate.java.model.Country
+com/google/mlkit/samples/nl/translate/java/activity/TranslateActivity.java
+ com.google.mlkit.samples.nl.translate.java.activity.TranslateActivity
+com/google/mlkit/samples/nl/translate/BuildConfig.java
+ com.google.mlkit.samples.nl.translate.BuildConfig
+com/google/mlkit/samples/nl/translate/java/model/Conversation.java
+ com.google.mlkit.samples.nl.translate.java.model.Conversation
+com/google/mlkit/samples/nl/translate/java/model/OnBoarding.java
+ com.google.mlkit.samples.nl.translate.java.model.OnBoarding
+com/google/mlkit/samples/nl/translate/java/utils/SquareImageView.java
+ com.google.mlkit.samples.nl.translate.java.utils.SquareImageView
+com/google/mlkit/samples/nl/translate/java/listener/LanguageClickListener.java
+ com.google.mlkit.samples.nl.translate.java.listener.LanguageClickListener
+com/google/mlkit/samples/nl/translate/java/model/Language.java
+ com.google.mlkit.samples.nl.translate.java.model.Language
+com/google/mlkit/samples/nl/translate/java/database/DataBaseHelper.java
+ com.google.mlkit.samples.nl.translate.java.database.DataBaseHelper
+com/google/mlkit/samples/nl/translate/java/model/SelectLanguage.java
+ com.google.mlkit.samples.nl.translate.java.model.SelectLanguage
+com/google/mlkit/samples/nl/translate/java/activity/RootActivity.java
+ com.google.mlkit.samples.nl.translate.java.activity.RootActivity
+com/google/mlkit/samples/nl/translate/java/listener/TranslateListener.java
+ com.google.mlkit.samples.nl.translate.java.listener.TranslateListener
+com/google/mlkit/samples/nl/translate/java/model/PhraseWord.java
+ com.google.mlkit.samples.nl.translate.java.model.PhraseWord
+com/google/mlkit/samples/nl/translate/java/model/PhraseBook.java
+ com.google.mlkit.samples.nl.translate.java.model.PhraseBook
+com/google/mlkit/samples/nl/translate/java/listener/SelectLanguageClickListener.java
+ com.google.mlkit.samples.nl.translate.java.listener.SelectLanguageClickListener
+com/google/mlkit/samples/nl/translate/java/model/Category.java
+ com.google.mlkit.samples.nl.translate.java.model.Category
+com/google/mlkit/samples/nl/translate/java/listener/CountryClickListener.java
+ com.google.mlkit.samples.nl.translate.java.listener.CountryClickListener
+com/google/mlkit/samples/nl/translate/java/activity/StarterActivity.java
+ com.google.mlkit.samples.nl.translate.java.activity.StarterActivity
+com/google/mlkit/samples/nl/translate/java/adapter/SelectLanguageAdapter.java
+ com.google.mlkit.samples.nl.translate.java.adapter.SelectLanguageAdapter
+ com.google.mlkit.samples.nl.translate.java.adapter.SelectLanguageAdapter$MyViewHolder
+com/google/mlkit/samples/nl/translate/java/utils/ConvertTextToSpeech.java
+ com.google.mlkit.samples.nl.translate.java.utils.ConvertTextToSpeech
+com/google/mlkit/samples/nl/translate/java/TranslateFragment.java
+ com.google.mlkit.samples.nl.translate.java.TranslateFragment
+ com.google.mlkit.samples.nl.translate.java.TranslateFragment$1
+ com.google.mlkit.samples.nl.translate.java.TranslateFragment$2
+ com.google.mlkit.samples.nl.translate.java.TranslateFragment$3
+ com.google.mlkit.samples.nl.translate.java.TranslateFragment$ResultOrError
+com/google/mlkit/samples/nl/translate/java/activity/OnBoardingActivity.java
+ com.google.mlkit.samples.nl.translate.java.activity.OnBoardingActivity
+ com.google.mlkit.samples.nl.translate.java.activity.OnBoardingActivity$1
+com/google/mlkit/samples/nl/translate/java/adapter/HistoryAdapter.java
+ com.google.mlkit.samples.nl.translate.java.adapter.HistoryAdapter
+ com.google.mlkit.samples.nl.translate.java.adapter.HistoryAdapter$DateContainerViewHolder
+ com.google.mlkit.samples.nl.translate.java.adapter.HistoryAdapter$MyViewHolder
+com/google/mlkit/samples/nl/translate/java/activity/HistoryActivity.java
+ com.google.mlkit.samples.nl.translate.java.activity.HistoryActivity
+com/google/mlkit/samples/nl/translate/java/utils/DataTranslator.java
+ com.google.mlkit.samples.nl.translate.java.utils.DataTranslator
+ com.google.mlkit.samples.nl.translate.java.utils.DataTranslator$1
+com/google/mlkit/samples/nl/translate/java/adapter/CountryAdapter.java
+ com.google.mlkit.samples.nl.translate.java.adapter.CountryAdapter
+ com.google.mlkit.samples.nl.translate.java.adapter.CountryAdapter$MyViewHolder
+com/google/mlkit/samples/nl/translate/java/activity/ConversationActivity.java
+ com.google.mlkit.samples.nl.translate.java.activity.ConversationActivity
+ com.google.mlkit.samples.nl.translate.java.activity.ConversationActivity$1
+com/google/mlkit/samples/nl/translate/java/TranslateViewModel.java
+ com.google.mlkit.samples.nl.translate.java.TranslateViewModel
+ com.google.mlkit.samples.nl.translate.java.TranslateViewModel$1
+ com.google.mlkit.samples.nl.translate.java.TranslateViewModel$2
+ com.google.mlkit.samples.nl.translate.java.TranslateViewModel$3
+ com.google.mlkit.samples.nl.translate.java.TranslateViewModel$4
+ com.google.mlkit.samples.nl.translate.java.TranslateViewModel$5
+ com.google.mlkit.samples.nl.translate.java.TranslateViewModel$6
+ com.google.mlkit.samples.nl.translate.java.TranslateViewModel$7
+ com.google.mlkit.samples.nl.translate.java.TranslateViewModel$8
+ com.google.mlkit.samples.nl.translate.java.TranslateViewModel$ResultOrError
+com/google/mlkit/samples/nl/translate/java/activity/SelectLanguageActivity.java
+ com.google.mlkit.samples.nl.translate.java.activity.SelectLanguageActivity
+com/google/mlkit/samples/nl/translate/java/activity/EssentialActivity.java
+ com.google.mlkit.samples.nl.translate.java.activity.EssentialActivity
+com/google/mlkit/samples/nl/translate/java/activity/CountryActivity.java
+ com.google.mlkit.samples.nl.translate.java.activity.CountryActivity
+ com.google.mlkit.samples.nl.translate.java.activity.CountryActivity$1
+com/google/mlkit/samples/nl/translate/java/utils/GeneralPreference.java
+ com.google.mlkit.samples.nl.translate.java.utils.GeneralPreference
+com/google/mlkit/samples/nl/translate/java/adapter/OnBoardingAdapter.java
+ com.google.mlkit.samples.nl.translate.java.adapter.OnBoardingAdapter
+com/google/mlkit/samples/nl/translate/java/activity/TimePassVoiceActivity.java
+ com.google.mlkit.samples.nl.translate.java.activity.TimePassVoiceActivity
+com/google/mlkit/samples/nl/translate/java/adapter/ConversationAdapter.java
+ com.google.mlkit.samples.nl.translate.java.adapter.ConversationAdapter
+ com.google.mlkit.samples.nl.translate.java.adapter.ConversationAdapter$DateContainerViewHolder
+ com.google.mlkit.samples.nl.translate.java.adapter.ConversationAdapter$MyViewHolder
+com/google/mlkit/samples/nl/translate/java/activity/SplashActivity.java
+ com.google.mlkit.samples.nl.translate.java.activity.SplashActivity
+ com.google.mlkit.samples.nl.translate.java.activity.SplashActivity$1
+com/google/mlkit/samples/nl/translate/java/activity/SettingActivity.java
+ com.google.mlkit.samples.nl.translate.java.activity.SettingActivity
+com/google/mlkit/samples/nl/translate/java/utils/CountrySelector.java
+ com.google.mlkit.samples.nl.translate.java.utils.CountrySelector
+com/google/mlkit/samples/nl/translate/java/activity/MainActivity.java
+ com.google.mlkit.samples.nl.translate.java.activity.MainActivity
+ com.google.mlkit.samples.nl.translate.java.activity.MainActivity$1
+com/google/mlkit/samples/nl/translate/java/adapter/LanguageAdapter.java
+ com.google.mlkit.samples.nl.translate.java.adapter.LanguageAdapter
+ com.google.mlkit.samples.nl.translate.java.adapter.LanguageAdapter$MyViewHolder
+com/google/mlkit/samples/nl/translate/java/activity/PhrasesActivity.java
+ com.google.mlkit.samples.nl.translate.java.activity.PhrasesActivity
+com/google/mlkit/samples/nl/translate/java/adapter/PhraseCategoryAdapter.java
+ com.google.mlkit.samples.nl.translate.java.adapter.PhraseCategoryAdapter
+ com.google.mlkit.samples.nl.translate.java.adapter.PhraseCategoryAdapter$1
+ com.google.mlkit.samples.nl.translate.java.adapter.PhraseCategoryAdapter$2
+ com.google.mlkit.samples.nl.translate.java.adapter.PhraseCategoryAdapter$MyViewHolder
+com/google/mlkit/samples/nl/translate/java/fragment/PhraseCategoryFragment.java
+ com.google.mlkit.samples.nl.translate.java.fragment.PhraseCategoryFragment
+ com.google.mlkit.samples.nl.translate.java.fragment.PhraseCategoryFragment$1
+com/google/mlkit/samples/nl/translate/java/adapter/PageAdapter.java
+ com.google.mlkit.samples.nl.translate.java.adapter.PageAdapter

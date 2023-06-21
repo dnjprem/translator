@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="text_select_country">Landkreis auswählen</string>
+    <string name="text_search">Suchen</string>
+    <string name="text_all_country">Alle Länder</string>
+    <string name="text_no_country_found">Land nicht gefunden…</string>
+    <string name="select_app_language">App-Sprache auswählen</string>
+    <string name="system_default">Systemstandard</string>
+    <string name="all_language">Alle Sprachen</string>
+
+    <string name="text_onboard_first_title">Sprache und Übersetzung</string>
+    <string name="text_fir_onboard_first_sub_title">Gesprochene Sprache in Text umgewandelt</string>
+    <string name="text_sec_onboard_first_sub_title">und wird dann übersetzt.</string>
+
+    <string name="text_onboard_second_title">Text in Sprache übersetzen</string>
+    <string name="text_fir_onboard_sec_sub_title">Text als Eingabe übernehmen, übersetzen</string>
+    <string name="text_sec_onboard_sec_sub_title">Und geben Sie Audible-Sprache als Ausgabe</string>
+
+    <string name="text_onboard_third_title">Teilen Sie Ihren übersetzten Text</string>
+    <string name="text_fir_onboard_third_sub_title">Teilen Sie Ihre Translates-Rede mit</string>
+    <string name="text_sec_onboard_third_sub_title">Ihre Freunde verwenden den Sprachübersetzer</string>
+
+    <string name="text_next">Weiter</string>
+    <string name="text_say_something">Sag etwas…</string>
+    <string name="text_device_not_support">Ihr Gerät unterstützt keine Sprachfunktion</string>
+    <string name="text_lets_start">Lass uns beginnen</string>
+    <string name="text_translate_language">Sprache übersetzen</string>
+    <string name="text_rate_app">App bewerten</string>
+    <string name="text_rating_and_review">Bewertung und Rezension</string>
+    <string name="text_with_your_friends">mit deinen Freunden</string>
+    <string name="translated_text_hint">Übersetzter Text</string>
+    <string name="unknown_error">Unbekannter Fehler ist aufgetreten.</string>
+    <string name="source_text_hint">Text eingeben</string>
+    <string name="text_phrases">Phrasen</string>
+    <string name="text_conversation">Konversation</string>
+    <string name="text_setting">Einstellungen</string>
+    <string name="text_translate">Übersetzen</string>
+    <string name="text_phrase_book">Sprachführer</string>
+    <string name="text_essentials">Grundlagen</string>
+    <string name="app_languages">Sprachen</string>
+    <string name="selected">Ausgewählt</string>
+    <string name="text_greetings">Grüße</string>
+    <string name="text_basic">Grundlegend</string>
+    <string name="text_copied">Text kopiert</string>
+    <string name="text_not_found">Text nicht gefunden</string>
+    <string name="text_select_the_country">Wählen Sie das Land aus</string>
+    <string name="text_please_download_language_first">Bitte laden Sie zuerst die Sprache herunter</string>
+    <string name="text_downloading_start">Download-Start</string>
+    <string name="text_already_downloaded">Bereits heruntergeladen</string>
+    <string name="text_download_successfully">Erfolgreich heruntergeladen</string>
+    <string name="text_app_themes">App-Themen</string>
+    <string name="text_history">Verlauf</string>
+    <string name="text_share_app">App teilen</string>
+    <string name="text_rate">Bewerten Sie uns</string>
+    <string name="text_privacy">Datenschutzerklärung</string>
+    <string name="text_start_conversation">Starten Sie Ihr Gespräch</string>
+    <string name="text_tap_mic_button_to_start_conversation">Tippen Sie auf die Mikrofontaste, um das Gespräch zu beginnen</string>
+    <string name="text_translating">Übersetzen…</string>
+    <string name="text_favorite">Favorit</string>
+    <string name="text_no_history">Kein Verlauf gefunden</string>
+    <string name="text_make_translation_history">Bitte beginnen Sie mit der Übersetzung</string>
+    <string name="text_no_favorite">Keine Lieblingsübersetzung gefunden</string>
+    <string name="text_make_translation_favorite">Machen Sie Ihre Übersetzung zu Ihren Favoriten</string>
+</resources>

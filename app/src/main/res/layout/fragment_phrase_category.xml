@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".java.fragment.PhraseCategoryFragment">
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/essential_rcv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+    <com.facebook.shimmer.ShimmerFrameLayout
+        android:id="@+id/shimmerFrameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <include
+                layout="@layout/shrimmer_item_view_essentials"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="@dimen/normal_margin" />
+
+            <include
+                layout="@layout/shrimmer_item_view_essentials"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="@dimen/normal_margin" />
+
+            <include
+                layout="@layout/shrimmer_item_view_essentials"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="@dimen/normal_margin" />
+
+            <include
+                layout="@layout/shrimmer_item_view_essentials"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="@dimen/normal_margin" />
+
+            <include
+                layout="@layout/shrimmer_item_view_essentials"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="@dimen/normal_margin" />
+
+            <include
+                layout="@layout/shrimmer_item_view_essentials"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="@dimen/normal_margin" />
+
+            <include
+                layout="@layout/shrimmer_item_view_essentials"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="@dimen/normal_margin" />
+
+            <include
+                layout="@layout/shrimmer_item_view_essentials"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="@dimen/normal_margin" />
+
+            <include
+                layout="@layout/shrimmer_item_view_essentials"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="@dimen/normal_margin" />
+
+
+        </LinearLayout>
+
+    </com.facebook.shimmer.ShimmerFrameLayout>
+
+</FrameLayout>

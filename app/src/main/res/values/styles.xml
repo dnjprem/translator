@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowEnterAnimation">@anim/fade_in</item>
+        <!--        <item name="android:windowEnterTransition" tools:targetApi="lollipop">@android:transition/fade</item>-->
+        <item name="android:windowExitAnimation">@anim/fade_out</item>
+        <!--        <item name="android:windowExitTransition" tools:targetApi="lollipop">@android:transition/fade</item>-->
+    </style>
+
+    <style name="IconOnlyButton" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="iconPadding">0dp</item>
+        <item name="iconGravity">textStart</item>
+    </style>
+
+    <style name="CircularProgressIndicatorStyle" parent="Widget.MaterialComponents.CircularProgressIndicator">
+        <item name="trackThickness">2.5dp</item>
+        <item name="indicatorSize">20dp</item>
+        <item name="indicatorInset">2dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="indicatorColor">@color/colorThirdDark</item>
+        <item name="android:supportsUploading">true</item>
+    </style>
+
+    <style name="SelectLanguageTitleStyle">
+        <item name="android:includeFontPadding">false</item>
+        <item name="fontFamily">@font/plus_jakarta_sans_semi_bold</item>
+        <item name="android:textColor">@color/colorThirdDark</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="SystemLanguageTextStyle">
+        <item name="android:includeFontPadding">false</item>
+        <item name="fontFamily">@font/plus_jakarta_sans_bold</item>
+        <item name="android:textColor">@color/colorThirdDark</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="SelectLanguageSubTitleStyle">
+        <item name="android:includeFontPadding">false</item>
+        <item name="fontFamily">@font/plus_jakarta_sans_semi_bold</item>
+        <item name="android:textColor">@color/colorThirdDark</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+
+    <style name="BottomBarStyle">
+        <item name="fontFamily">@font/plus_jakarta_sans_regular</item>
+        <item name="android:textColor">@color/colorThirdDark</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="ExpandedTextStyle">
+        <item name="fontFamily">@font/plus_jakarta_sans_regular</item>
+        <item name="android:textColor">@color/lightWhite</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="ExpandedBoldTextStyle">
+        <item name="fontFamily">@font/plus_jakarta_sans_semi_bold</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="TabFont" parent="TextAppearance.Design.Tab">
+        <item name="android:fontFamily">@font/plus_jakarta_sans_regular</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="textAllCaps">false</item>
+        <item name="android:layout_margin">10dp</item>
+    </style>
+
+    <style name="ConversationTitleStyle">
+        <item name="android:includeFontPadding">false</item>
+        <item name="fontFamily">@font/plus_jakarta_sans_bold</item>
+        <item name="android:textColor">@color/colorThirdDark</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="ConversationSubTitleStyle">
+        <item name="fontFamily">@font/plus_jakarta_sans_regular</item>
+        <item name="android:textColor">@color/conversation_subtitle</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+
+    <style name="ConversationCodeTextStyle">
+        <item name="android:includeFontPadding">false</item>
+        <item name="fontFamily">@font/plus_jakarta_sans_semi_bold</item>
+        <item name="android:textColor">@color/colorThirdDark</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="ConversationSourceTextStyle">
+        <item name="fontFamily">@font/plus_jakarta_sans_medium</item>
+        <item name="android:textColor">@color/colorThirdDark</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="ConversationTargetTextStyle">
+        <item name="fontFamily">@font/plus_jakarta_sans_bold</item>
+        <item name="android:textColor">@color/colorThirdDark</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="ConversationSourceTextStyleSecond">
+        <item name="fontFamily">@font/plus_jakarta_sans_medium</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="ConversationTargetTextStyleSecond">
+        <item name="fontFamily">@font/plus_jakarta_sans_bold</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="ConversationTimeTextStyle">
+        <item name="android:includeFontPadding">false</item>
+        <item name="fontFamily">@font/plus_jakarta_sans_semi_bold</item>
+        <item name="android:textColor">@color/conversation_chat_time</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+
+    <style name="HistoryLanguageTextStyle">
+        <item name="fontFamily">@font/plus_jakarta_sans_regular</item>
+        <item name="android:textColor">@color/colorThirdDark</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="HistorySourceTextStyle">
+        <item name="fontFamily">@font/plus_jakarta_sans_regular</item>
+        <item name="android:textColor">@color/colorThirdDark</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="HistoryTargetTextStyle">
+        <item name="fontFamily">@font/plus_jakarta_sans_bold</item>
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="OnBoardingTitleTextStyle">
+        <item name="fontFamily">@font/plus_jakarta_sans_bold</item>
+        <item name="android:textColor">@color/colorThirdDark</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:textSize">22sp</item>
+    </style>
+
+    <style name="OnBoardingSubTitleTextStyle">
+        <item name="fontFamily">@font/plus_jakarta_sans_regular</item>
+        <item name="android:textColor">@color/colorThirdDark</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+
+    <style name="StarterSelectedTitleTextStyle">
+        <item name="android:includeFontPadding">false</item>
+        <item name="fontFamily">@font/plus_jakarta_sans_semi_bold</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="StarterSelectedSubTitleTextStyle">
+        <item name="fontFamily">@font/plus_jakarta_sans_regular</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+
+    <style name="StarterTitleTextStyle">
+        <item name="android:includeFontPadding">false</item>
+        <item name="fontFamily">@font/plus_jakarta_sans_semi_bold</item>
+        <item name="android:textColor">@color/colorThirdDark</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+
+    <style name="StarterSubTitleTextStyle">
+        <item name="fontFamily">@font/plus_jakarta_sans_regular</item>
+        <item name="android:textColor">@color/colorThirdDark</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <declare-styleable name="SquareImageView">
+        <attr name="hwRatio" format="float|reference" />
+    </declare-styleable>
+</resources>

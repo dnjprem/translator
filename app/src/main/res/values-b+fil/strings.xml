@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="text_select_country">Piliin ang County</string>
+    <string name="text_search">Hanapin</string>
+    <string name="text_all_country">Lahat ng Bansa</string>
+    <string name="text_no_country_found">Hindi Natagpuan ang Bansa…</string>
+    <string name="select_app_language">Pumili ng Wika ng App</string>
+    <string name="system_default">System Default</string>
+    <string name="all_language">Lahat ng Wika</string>
+
+    <string name="text_onboard_first_title">Speech And Translate</string>
+    <string name="text_fir_onboard_first_sub_title">Na-convert sa Text ang sinasalitang wika</string>
+    <string name="text_sec_onboard_first_sub_title">at pagkatapos ay isasalin.</string>
+
+    <string name="text_onboard_second_title">Isalin ang Teksto Sa Speech</string>
+    <string name="text_fir_onboard_sec_sub_title">Kunin ang text bilang isang Input, Translate,</string>
+    <string name="text_sec_onboard_sec_sub_title">At magbigay ng Audible speech bilang output</string>
+
+    <string name="text_onboard_third_title">Ibahagi ang Iyong Teksto ng Mga Pagsasalin</string>
+    <string name="text_fir_onboard_third_sub_title">Ibahagi ang Iyong Pananalita sa Pagsasalin sa</string>
+    <string name="text_sec_onboard_third_sub_title">Iyong Mga Kaibigan na Gumagamit ng Tagasalin ng Wika</string>
+
+    <string name="text_next">Susunod</string>
+    <string name="text_say_something">Say Something…</string>
+    <string name="text_device_not_support">Hindi Sinusuportahan ng Iyong Device ang functionality ng Speech</string>
+    <string name="text_lets_start">Magsimula Tayo</string>
+    <string name="text_translate_language">Isalin ang Wika</string>
+    <string name="text_rate_app">I-rate ang App</string>
+    <string name="text_rating_and_review">Rating at Review</string>
+    <string name="text_with_your_friends">kasama ang iyong mga kaibigan</string>
+    <string name="translated_text_hint">Isinalin na text</string>
+    <string name="unknown_error">Naganap ang hindi kilalang error.</string>
+    <string name="source_text_hint">Maglagay ng text</string>
+    <string name="text_phrases">Mga Parirala</string>
+    <string name="text_conversation">Pag-uusap</string>
+    <string name="text_setting">Mga Setting</string>
+    <string name="text_translate">Isalin</string>
+    <string name="text_phrase_book">Phrasebook</string>
+    <string name="text_essentials">Essentials</string>
+    <string name="app_languages">Mga Wika</string>
+    <string name="selected">Selected</string>
+    <string name="text_greetings">Pagbati</string>
+    <string name="text_basic">Basic</string>
+    <string name="text_copied">Nakopya ang Teksto</string>
+    <string name="text_not_found">Text Not Found</string>
+    <string name="text_select_the_country">Piliin ang Bansa</string>
+    <string name="text_please_download_language_first">Paki-download muna ang wika</string>
+    <string name="text_downloading_start">Pagsisimula sa Pag-download</string>
+    <string name="text_already_downloaded">Na-download na</string>
+    <string name="text_download_successfully">Matagumpay na I-download</string>
+    <string name="text_app_themes">Mga Tema ng App</string>
+    <string name="text_history">Kasaysayan</string>
+    <string name="text_share_app">Ibahagi ang App</string>
+    <string name="text_rate">I-rate Kami</string>
+    <string name="text_privacy">Patakaran sa Privacy</string>
+    <string name="text_start_conversation">Simulan ang iyong Pag-uusap</string>
+    <string name="text_tap_mic_button_to_start_conversation">I-tap ang mic button upang simulan ang pag-uusap</string>
+    <string name="text_translating">Nagsasalin…</string>
+    <string name="text_favorite">Paborito</string>
+    <string name="text_no_history">Walang Nakitang Kasaysayan</string>
+    <string name="text_make_translation_history">Pakisimulan ang Pagsasalin</string>
+    <string name="text_no_favorite">Walang Nahanap na Paboritong Pagsasalin</string>
+    <string name="text_make_translation_favorite">Gawing Paborito ang Iyong Pagsasalin</string>
+</resources>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name= "text_select_country">Zaɓi County</string>
+    <string name="text_search">Bincike</string>
+    <string name="text_all_country">Duk Kasar</string>
+    <string name="text_no_country_found">Ba a Same Kasa ba…</string>
+    <string name="select_app_language">Zaba Harshen App</string>
+    <string name="system_default">Tsoffin tsarin</string>
+    <string name= "all_language">Duk Harsuna</string>
+
+    <string name="text_onboard_first_title">Magana Kuma Fassara</string>
+    <string name="text_fir_onboard_first_sub_title">An canza harshen magana zuwa Rubutu</string>
+    <string name="text_sec_onboard_first_sub_title">sa\'an nan kuma za a Fassara.</string>
+
+    <string name="text_onboard_second_title">Fassara Rubutu Zuwa Magana</string>
+    <string name= "text_fir_onboard_sec_sub_title"> Ɗauki rubutu azaman Shigarwa, Fassara,</string>
+    <string name="text_sec_onboard_sec_sub_title">Kuma ba da jawabi Mai Ji a matsayin fitarwa</string>
+
+    <string name="text_onboard_third_title">Raba Rubutun Fassara </string>
+    <string name="text_fir_onboard_third_sub_title">Raba Maganar Fassara da</string>
+    <string name="text_sec_onboard_third_sub_title">Abokanku Ta Amfani da Fassara Harshe</string>
+
+    <string name="text_next">Na gaba</string>
+    <string name="text_say_something">Fadi Wani abu…</string>
+    <string name="text_device_not_support">Na\'urarku Bata Goyan bayan aikin Magana</string>
+    <string name="text_lets_start">Mu Fara </string>
+    <string name="text_translate_language">Fassara Harshe</string>
+    <string name= "text_rate_app" > Rate App</string>
+    <string name="text_rating_and_review">Kima da Bita </string>
+    <string name="text_with_your_friends">tare da abokanka</string>
+    <string name="translated_text_hint">Rubutun da aka fassara</string>
+    <string name="unknown_error">Kuskuren da ba a sani ba ya faru.</string>
+    <string name="source_text_hint">Shigar da rubutu</string>
+    <string name="text_phrases">Jumloli </string>
+    <string name="text_conversation">Tattaunawa</string>
+    <string name= "text_setting"> Saituna </string>
+    <string name="text_translate">Fassara</string>
+    <string name= "text_phrase_book" > Littafin jimla </string>
+    <string name="text_essentials">Abubuwa masu mahimmanci</string>
+    <string name= "app_languages"> Harsuna</string>
+    <string name="selected">An Zaba</string>
+    <string name="text_greetings">Gaisuwa</string>
+    <string name="text_basic">Na asali</string>
+    <string name="text_copied">An Kwafi Rubutu</string>
+    <string name="text_not_found">Ba a Samu Rubutu ba</string>
+    <string name="text_select_the_country">Zaɓi Ƙasa</string>
+    <string name="text_please_download_language_first">Da fatan za a fara sauke harshe</string>
+    <string name="text_downloading_start">Fara Zazzagewa</string>
+    <string name="text_already_downloaded">An riga an zazzage shi</string>
+    <string name= "text_download_successfully"> Zazzage Nasara</string>
+    <string name= "text_app_themes"> Jigogin App</string>
+    <string name="text_history">Tarihi</string>
+    <string name="text_share_app">Share App</string>
+    <string name= "text_rate" > Rage Mu </string>
+    <string name= "text_privacy">Manufofin Keɓantawa</string>
+    <string name="text_start_conversation">Fara Tattaunawar ku</string>
+    <string name="text_tap_mic_button_to_start_conversation">Taɓa maɓallin mic don fara magana</string>
+    <string name="text_translating">Fassara…</string>
+    <string name= "text_favorite">Fiyayyen </string>
+    <string name="text_no_history">Ba a Samu Tarihi ba</string>
+    <string name="text_make_translation_history">Da fatan za a fara Fassara</string>
+    <string name= "text_no_favorite">Ba a Samu Fassara da Aka Fi So ba</string>
+    <string name= "text_make_translation_favorite" > Sanya Fassara Naku Mafifici</string>
+</resources>

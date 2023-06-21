@@ -1,0 +1,286 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.google.mlkit.samples.nl.translate"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+8-->D:\PremDanej\AndroidProject\translate\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="31" />
+9-->D:\PremDanej\AndroidProject\translate\app\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+11-->[com.google.mlkit:translate:17.0.1] C:\Users\Viaxor\.gradle\caches\transforms-2\files-2.1\04caabb3e6dbb1c09c4177be5a3ab260\jetified-translate-17.0.1\AndroidManifest.xml:7:5-79
+11-->[com.google.mlkit:translate:17.0.1] C:\Users\Viaxor\.gradle\caches\transforms-2\files-2.1\04caabb3e6dbb1c09c4177be5a3ab260\jetified-translate-17.0.1\AndroidManifest.xml:7:22-76
+12    <uses-permission android:name="android.permission.INTERNET" />
+12-->[com.google.mlkit:translate:17.0.1] C:\Users\Viaxor\.gradle\caches\transforms-2\files-2.1\04caabb3e6dbb1c09c4177be5a3ab260\jetified-translate-17.0.1\AndroidManifest.xml:8:5-67
+12-->[com.google.mlkit:translate:17.0.1] C:\Users\Viaxor\.gradle\caches\transforms-2\files-2.1\04caabb3e6dbb1c09c4177be5a3ab260\jetified-translate-17.0.1\AndroidManifest.xml:8:22-64
+13
+14    <application
+14-->D:\PremDanej\AndroidProject\translate\app\src\main\AndroidManifest.xml:7:5-79:19
+15        android:allowBackup="true"
+15-->D:\PremDanej\AndroidProject\translate\app\src\main\AndroidManifest.xml:8:9-35
+16        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+16-->[androidx.core:core:1.7.0] C:\Users\Viaxor\.gradle\caches\transforms-2\files-2.1\e8864dc077fbf1ca29f3714e00bba56d\core-1.7.0\AndroidManifest.xml:24:18-86
+17        android:debuggable="true"
+18        android:hardwareAccelerated="true"
+18-->D:\PremDanej\AndroidProject\translate\app\src\main\AndroidManifest.xml:9:9-43
+19        android:icon="@drawable/logo_mlkit"
+19-->D:\PremDanej\AndroidProject\translate\app\src\main\AndroidManifest.xml:10:9-44
+20        android:label="@string/app_name"
+20-->D:\PremDanej\AndroidProject\translate\app\src\main\AndroidManifest.xml:11:9-41
+21        android:supportsRtl="true"
+21-->[com.github.Theophrast:SquareImageView:1.0.1] C:\Users\Viaxor\.gradle\caches\transforms-2\files-2.1\d96f06bef03d9585b86b4f2d6628e02f\jetified-SquareImageView-1.0.1\AndroidManifest.xml:14:9-35
+22        android:testOnly="true"
+23        android:theme="@style/AppTheme" >
+23-->D:\PremDanej\AndroidProject\translate\app\src\main\AndroidManifest.xml:12:9-40
+24        <activity
+24-->D:\PremDanej\AndroidProject\translate\app\src\main\AndroidManifest.xml:13:9-15:40
+25            android:name="com.google.mlkit.samples.nl.translate.java.activity.StarterActivity"
+25-->D:\PremDanej\AndroidProject\translate\app\src\main\AndroidManifest.xml:14:13-58
+26            android:exported="false" />
+26-->D:\PremDanej\AndroidProject\translate\app\src\main\AndroidManifest.xml:15:13-37
+27        <activity
+27-->D:\PremDanej\AndroidProject\translate\app\src\main\AndroidManifest.xml:16:9-19:52
+28            android:name="com.google.mlkit.samples.nl.translate.java.activity.OnBoardingActivity"
+28-->D:\PremDanej\AndroidProject\translate\app\src\main\AndroidManifest.xml:17:13-61
+29            android:exported="true"
+29-->D:\PremDanej\AndroidProject\translate\app\src\main\AndroidManifest.xml:18:13-36
+30            android:screenOrientation="portrait" />
+30-->D:\PremDanej\AndroidProject\translate\app\src\main\AndroidManifest.xml:19:13-49
+31        <activity
+31-->D:\PremDanej\AndroidProject\translate\app\src\main\AndroidManifest.xml:20:9-23:61
+32            android:name="com.google.mlkit.samples.nl.translate.java.activity.CountryActivity"
+32-->D:\PremDanej\AndroidProject\translate\app\src\main\AndroidManifest.xml:21:13-58
+33            android:exported="true"
+33-->D:\PremDanej\AndroidProject\translate\app\src\main\AndroidManifest.xml:22:13-36
+34            android:screenOrientation="portrait" />
+34-->D:\PremDanej\AndroidProject\translate\app\src\main\AndroidManifest.xml:23:13-49
+35        <activity
+35-->D:\PremDanej\AndroidProject\translate\app\src\main\AndroidManifest.xml:24:9-27:52
+36            android:name="com.google.mlkit.samples.nl.translate.java.activity.HistoryActivity"
+36-->D:\PremDanej\AndroidProject\translate\app\src\main\AndroidManifest.xml:25:13-58
+37            android:exported="false"
+37-->D:\PremDanej\AndroidProject\translate\app\src\main\AndroidManifest.xml:26:13-37
+38            android:screenOrientation="portrait" />
+38-->D:\PremDanej\AndroidProject\translate\app\src\main\AndroidManifest.xml:27:13-49
+39        <activity
+39-->D:\PremDanej\AndroidProject\translate\app\src\main\AndroidManifest.xml:28:9-31:52
+40            android:name="com.google.mlkit.samples.nl.translate.java.activity.TimePassVoiceActivity"
+40-->D:\PremDanej\AndroidProject\translate\app\src\main\AndroidManifest.xml:29:13-64
+41            android:exported="true"
+41-->D:\PremDanej\AndroidProject\translate\app\src\main\AndroidManifest.xml:30:13-36
+42            android:screenOrientation="portrait" />
+42-->D:\PremDanej\AndroidProject\translate\app\src\main\AndroidManifest.xml:31:13-49
+43        <activity
+43-->D:\PremDanej\AndroidProject\translate\app\src\main\AndroidManifest.xml:32:9-35:52
+44            android:name="com.google.mlkit.samples.nl.translate.java.activity.RootActivity"
+44-->D:\PremDanej\AndroidProject\translate\app\src\main\AndroidManifest.xml:33:13-55
+45            android:exported="false"
+45-->D:\PremDanej\AndroidProject\translate\app\src\main\AndroidManifest.xml:34:13-37
+46            android:screenOrientation="portrait" />
+46-->D:\PremDanej\AndroidProject\translate\app\src\main\AndroidManifest.xml:35:13-49
+47        <activity
+47-->D:\PremDanej\AndroidProject\translate\app\src\main\AndroidManifest.xml:36:9-39:52
+48            android:name="com.google.mlkit.samples.nl.translate.java.activity.SettingActivity"
+48-->D:\PremDanej\AndroidProject\translate\app\src\main\AndroidManifest.xml:37:13-58
+49            android:exported="false"
+49-->D:\PremDanej\AndroidProject\translate\app\src\main\AndroidManifest.xml:38:13-37
+50            android:screenOrientation="portrait" />
+50-->D:\PremDanej\AndroidProject\translate\app\src\main\AndroidManifest.xml:39:13-49
+51        <activity
+51-->D:\PremDanej\AndroidProject\translate\app\src\main\AndroidManifest.xml:40:9-43:52
+52            android:name="com.google.mlkit.samples.nl.translate.java.activity.ConversationActivity"
+52-->D:\PremDanej\AndroidProject\translate\app\src\main\AndroidManifest.xml:41:13-63
+53            android:exported="false"
+53-->D:\PremDanej\AndroidProject\translate\app\src\main\AndroidManifest.xml:42:13-37
+54            android:screenOrientation="portrait" />
+54-->D:\PremDanej\AndroidProject\translate\app\src\main\AndroidManifest.xml:43:13-49
+55        <activity
+55-->D:\PremDanej\AndroidProject\translate\app\src\main\AndroidManifest.xml:44:9-47:52
+56            android:name="com.google.mlkit.samples.nl.translate.java.activity.EssentialActivity"
+56-->D:\PremDanej\AndroidProject\translate\app\src\main\AndroidManifest.xml:45:13-60
+57            android:exported="false"
+57-->D:\PremDanej\AndroidProject\translate\app\src\main\AndroidManifest.xml:46:13-37
+58            android:screenOrientation="portrait" />
+58-->D:\PremDanej\AndroidProject\translate\app\src\main\AndroidManifest.xml:47:13-49
+59        <activity
+59-->D:\PremDanej\AndroidProject\translate\app\src\main\AndroidManifest.xml:48:9-51:52
+60            android:name="com.google.mlkit.samples.nl.translate.java.activity.PhrasesActivity"
+60-->D:\PremDanej\AndroidProject\translate\app\src\main\AndroidManifest.xml:49:13-58
+61            android:exported="false"
+61-->D:\PremDanej\AndroidProject\translate\app\src\main\AndroidManifest.xml:50:13-37
+62            android:screenOrientation="portrait" />
+62-->D:\PremDanej\AndroidProject\translate\app\src\main\AndroidManifest.xml:51:13-49
+63        <activity
+63-->D:\PremDanej\AndroidProject\translate\app\src\main\AndroidManifest.xml:52:9-55:52
+64            android:name="com.google.mlkit.samples.nl.translate.java.activity.SelectLanguageActivity"
+64-->D:\PremDanej\AndroidProject\translate\app\src\main\AndroidManifest.xml:53:13-65
+65            android:exported="false"
+65-->D:\PremDanej\AndroidProject\translate\app\src\main\AndroidManifest.xml:54:13-37
+66            android:screenOrientation="portrait" />
+66-->D:\PremDanej\AndroidProject\translate\app\src\main\AndroidManifest.xml:55:13-49
+67        <activity
+67-->D:\PremDanej\AndroidProject\translate\app\src\main\AndroidManifest.xml:56:9-65:20
+68            android:name="com.google.mlkit.samples.nl.translate.java.activity.SplashActivity"
+68-->D:\PremDanej\AndroidProject\translate\app\src\main\AndroidManifest.xml:57:13-57
+69            android:exported="true"
+69-->D:\PremDanej\AndroidProject\translate\app\src\main\AndroidManifest.xml:58:13-36
+70            android:screenOrientation="portrait" >
+70-->D:\PremDanej\AndroidProject\translate\app\src\main\AndroidManifest.xml:59:13-49
+71            <intent-filter>
+71-->D:\PremDanej\AndroidProject\translate\app\src\main\AndroidManifest.xml:60:13-64:29
+72                <action android:name="android.intent.action.MAIN" />
+72-->D:\PremDanej\AndroidProject\translate\app\src\main\AndroidManifest.xml:61:17-69
+72-->D:\PremDanej\AndroidProject\translate\app\src\main\AndroidManifest.xml:61:25-66
+73
+74                <category android:name="android.intent.category.LAUNCHER" />
+74-->D:\PremDanej\AndroidProject\translate\app\src\main\AndroidManifest.xml:63:17-77
+74-->D:\PremDanej\AndroidProject\translate\app\src\main\AndroidManifest.xml:63:27-74
+75            </intent-filter>
+76        </activity>
+77        <activity
+77-->D:\PremDanej\AndroidProject\translate\app\src\main\AndroidManifest.xml:66:9-69:52
+78            android:name="com.google.mlkit.samples.nl.translate.java.activity.TranslateActivity"
+78-->D:\PremDanej\AndroidProject\translate\app\src\main\AndroidManifest.xml:67:13-60
+79            android:exported="false"
+79-->D:\PremDanej\AndroidProject\translate\app\src\main\AndroidManifest.xml:68:13-37
+80            android:screenOrientation="portrait" />
+80-->D:\PremDanej\AndroidProject\translate\app\src\main\AndroidManifest.xml:69:13-49
+81        <activity
+81-->D:\PremDanej\AndroidProject\translate\app\src\main\AndroidManifest.xml:70:9-74:52
+82            android:name="com.google.mlkit.samples.nl.translate.java.activity.MainActivity"
+82-->D:\PremDanej\AndroidProject\translate\app\src\main\AndroidManifest.xml:71:13-55
+83            android:exported="true"
+83-->D:\PremDanej\AndroidProject\translate\app\src\main\AndroidManifest.xml:72:13-36
+84            android:label="@string/app_name"
+84-->D:\PremDanej\AndroidProject\translate\app\src\main\AndroidManifest.xml:73:13-45
+85            android:screenOrientation="portrait" />
+85-->D:\PremDanej\AndroidProject\translate\app\src\main\AndroidManifest.xml:74:13-49
+86
+87        <meta-data
+87-->D:\PremDanej\AndroidProject\translate\app\src\main\AndroidManifest.xml:76:9-78:57
+88            android:name="preloaded_fonts"
+88-->D:\PremDanej\AndroidProject\translate\app\src\main\AndroidManifest.xml:77:13-43
+89            android:resource="@array/preloaded_fonts" />
+89-->D:\PremDanej\AndroidProject\translate\app\src\main\AndroidManifest.xml:78:13-54
+90
+91        <service
+91-->[com.google.mlkit:translate:17.0.1] C:\Users\Viaxor\.gradle\caches\transforms-2\files-2.1\04caabb3e6dbb1c09c4177be5a3ab260\jetified-translate-17.0.1\AndroidManifest.xml:11:9-17:19
+92            android:name="com.google.mlkit.common.internal.MlKitComponentDiscoveryService"
+92-->[com.google.mlkit:translate:17.0.1] C:\Users\Viaxor\.gradle\caches\transforms-2\files-2.1\04caabb3e6dbb1c09c4177be5a3ab260\jetified-translate-17.0.1\AndroidManifest.xml:12:13-91
+93            android:directBootAware="true"
+93-->[com.google.mlkit:common:18.5.0] C:\Users\Viaxor\.gradle\caches\transforms-2\files-2.1\1458f00bbdd9af35ea46508c314f6794\jetified-common-18.5.0\AndroidManifest.xml:17:13-43
+94            android:exported="false" >
+94-->[com.google.mlkit:translate:17.0.1] C:\Users\Viaxor\.gradle\caches\transforms-2\files-2.1\04caabb3e6dbb1c09c4177be5a3ab260\jetified-translate-17.0.1\AndroidManifest.xml:13:13-37
+95            <meta-data
+95-->[com.google.mlkit:translate:17.0.1] C:\Users\Viaxor\.gradle\caches\transforms-2\files-2.1\04caabb3e6dbb1c09c4177be5a3ab260\jetified-translate-17.0.1\AndroidManifest.xml:14:13-16:85
+96                android:name="com.google.firebase.components:com.google.mlkit.nl.translate.NaturalLanguageTranslateRegistrar"
+96-->[com.google.mlkit:translate:17.0.1] C:\Users\Viaxor\.gradle\caches\transforms-2\files-2.1\04caabb3e6dbb1c09c4177be5a3ab260\jetified-translate-17.0.1\AndroidManifest.xml:15:17-126
+97                android:value="com.google.firebase.components.ComponentRegistrar" />
+97-->[com.google.mlkit:translate:17.0.1] C:\Users\Viaxor\.gradle\caches\transforms-2\files-2.1\04caabb3e6dbb1c09c4177be5a3ab260\jetified-translate-17.0.1\AndroidManifest.xml:16:17-82
+98            <meta-data
+98-->[com.google.mlkit:common:18.5.0] C:\Users\Viaxor\.gradle\caches\transforms-2\files-2.1\1458f00bbdd9af35ea46508c314f6794\jetified-common-18.5.0\AndroidManifest.xml:20:13-22:85
+99                android:name="com.google.firebase.components:com.google.mlkit.common.internal.CommonComponentRegistrar"
+99-->[com.google.mlkit:common:18.5.0] C:\Users\Viaxor\.gradle\caches\transforms-2\files-2.1\1458f00bbdd9af35ea46508c314f6794\jetified-common-18.5.0\AndroidManifest.xml:21:17-120
+100                android:value="com.google.firebase.components.ComponentRegistrar" />
+100-->[com.google.mlkit:common:18.5.0] C:\Users\Viaxor\.gradle\caches\transforms-2\files-2.1\1458f00bbdd9af35ea46508c314f6794\jetified-common-18.5.0\AndroidManifest.xml:22:17-82
+101        </service>
+102
+103        <provider
+103-->[com.github.AliAsadi:PowerPreference:2.1.1] C:\Users\Viaxor\.gradle\caches\transforms-2\files-2.1\5149979af732a547df8b5ec2763c8b1c\jetified-PowerPreference-2.1.1\AndroidManifest.xml:10:9-14:40
+104            android:name="com.preference.provider.PreferenceProvider"
+104-->[com.github.AliAsadi:PowerPreference:2.1.1] C:\Users\Viaxor\.gradle\caches\transforms-2\files-2.1\5149979af732a547df8b5ec2763c8b1c\jetified-PowerPreference-2.1.1\AndroidManifest.xml:11:13-70
+105            android:authorities="com.google.mlkit.samples.nl.translate.content.provider"
+105-->[com.github.AliAsadi:PowerPreference:2.1.1] C:\Users\Viaxor\.gradle\caches\transforms-2\files-2.1\5149979af732a547df8b5ec2763c8b1c\jetified-PowerPreference-2.1.1\AndroidManifest.xml:12:13-68
+106            android:enabled="true"
+106-->[com.github.AliAsadi:PowerPreference:2.1.1] C:\Users\Viaxor\.gradle\caches\transforms-2\files-2.1\5149979af732a547df8b5ec2763c8b1c\jetified-PowerPreference-2.1.1\AndroidManifest.xml:13:13-35
+107            android:exported="false" />
+107-->[com.github.AliAsadi:PowerPreference:2.1.1] C:\Users\Viaxor\.gradle\caches\transforms-2\files-2.1\5149979af732a547df8b5ec2763c8b1c\jetified-PowerPreference-2.1.1\AndroidManifest.xml:14:13-37
+108
+109        <activity android:name="com.preference.ui.debug.DebugActivity" />
+109-->[com.github.AliAsadi:PowerPreference:2.1.1] C:\Users\Viaxor\.gradle\caches\transforms-2\files-2.1\5149979af732a547df8b5ec2763c8b1c\jetified-PowerPreference-2.1.1\AndroidManifest.xml:16:9-74
+109-->[com.github.AliAsadi:PowerPreference:2.1.1] C:\Users\Viaxor\.gradle\caches\transforms-2\files-2.1\5149979af732a547df8b5ec2763c8b1c\jetified-PowerPreference-2.1.1\AndroidManifest.xml:16:19-71
+110
+111        <provider
+111-->[com.google.mlkit:common:18.5.0] C:\Users\Viaxor\.gradle\caches\transforms-2\files-2.1\1458f00bbdd9af35ea46508c314f6794\jetified-common-18.5.0\AndroidManifest.xml:9:9-13:38
+112            android:name="com.google.mlkit.common.internal.MlKitInitProvider"
+112-->[com.google.mlkit:common:18.5.0] C:\Users\Viaxor\.gradle\caches\transforms-2\files-2.1\1458f00bbdd9af35ea46508c314f6794\jetified-common-18.5.0\AndroidManifest.xml:10:13-78
+113            android:authorities="com.google.mlkit.samples.nl.translate.mlkitinitprovider"
+113-->[com.google.mlkit:common:18.5.0] C:\Users\Viaxor\.gradle\caches\transforms-2\files-2.1\1458f00bbdd9af35ea46508c314f6794\jetified-common-18.5.0\AndroidManifest.xml:11:13-69
+114            android:exported="false"
+114-->[com.google.mlkit:common:18.5.0] C:\Users\Viaxor\.gradle\caches\transforms-2\files-2.1\1458f00bbdd9af35ea46508c314f6794\jetified-common-18.5.0\AndroidManifest.xml:12:13-37
+115            android:initOrder="99" />
+115-->[com.google.mlkit:common:18.5.0] C:\Users\Viaxor\.gradle\caches\transforms-2\files-2.1\1458f00bbdd9af35ea46508c314f6794\jetified-common-18.5.0\AndroidManifest.xml:13:13-35
+116
+117        <activity
+117-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\Viaxor\.gradle\caches\transforms-2\files-2.1\a696fb77d661e3185391d74c76858f6f\jetified-play-services-base-18.1.0\AndroidManifest.xml:20:9-22:45
+118            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+118-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\Viaxor\.gradle\caches\transforms-2\files-2.1\a696fb77d661e3185391d74c76858f6f\jetified-play-services-base-18.1.0\AndroidManifest.xml:20:19-85
+119            android:exported="false"
+119-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\Viaxor\.gradle\caches\transforms-2\files-2.1\a696fb77d661e3185391d74c76858f6f\jetified-play-services-base-18.1.0\AndroidManifest.xml:22:19-43
+120            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+120-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\Viaxor\.gradle\caches\transforms-2\files-2.1\a696fb77d661e3185391d74c76858f6f\jetified-play-services-base-18.1.0\AndroidManifest.xml:21:19-78
+121
+122        <meta-data
+122-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\Viaxor\.gradle\caches\transforms-2\files-2.1\4869241f7560e9c77e40624f00c9fb8b\jetified-play-services-basement-18.1.0\AndroidManifest.xml:21:9-23:69
+123            android:name="com.google.android.gms.version"
+123-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\Viaxor\.gradle\caches\transforms-2\files-2.1\4869241f7560e9c77e40624f00c9fb8b\jetified-play-services-basement-18.1.0\AndroidManifest.xml:22:13-58
+124            android:value="@integer/google_play_services_version" />
+124-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\Viaxor\.gradle\caches\transforms-2\files-2.1\4869241f7560e9c77e40624f00c9fb8b\jetified-play-services-basement-18.1.0\AndroidManifest.xml:23:13-66
+125
+126        <provider
+126-->[androidx.emoji2:emoji2:1.0.0] C:\Users\Viaxor\.gradle\caches\transforms-2\files-2.1\855ada1558adb5e2fde7981d0ca34bc7\jetified-emoji2-1.0.0\AndroidManifest.xml:26:9-34:20
+127            android:name="androidx.startup.InitializationProvider"
+127-->[androidx.emoji2:emoji2:1.0.0] C:\Users\Viaxor\.gradle\caches\transforms-2\files-2.1\855ada1558adb5e2fde7981d0ca34bc7\jetified-emoji2-1.0.0\AndroidManifest.xml:27:13-67
+128            android:authorities="com.google.mlkit.samples.nl.translate.androidx-startup"
+128-->[androidx.emoji2:emoji2:1.0.0] C:\Users\Viaxor\.gradle\caches\transforms-2\files-2.1\855ada1558adb5e2fde7981d0ca34bc7\jetified-emoji2-1.0.0\AndroidManifest.xml:28:13-68
+129            android:exported="false" >
+129-->[androidx.emoji2:emoji2:1.0.0] C:\Users\Viaxor\.gradle\caches\transforms-2\files-2.1\855ada1558adb5e2fde7981d0ca34bc7\jetified-emoji2-1.0.0\AndroidManifest.xml:29:13-37
+130            <meta-data
+130-->[androidx.emoji2:emoji2:1.0.0] C:\Users\Viaxor\.gradle\caches\transforms-2\files-2.1\855ada1558adb5e2fde7981d0ca34bc7\jetified-emoji2-1.0.0\AndroidManifest.xml:31:13-33:52
+131                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+131-->[androidx.emoji2:emoji2:1.0.0] C:\Users\Viaxor\.gradle\caches\transforms-2\files-2.1\855ada1558adb5e2fde7981d0ca34bc7\jetified-emoji2-1.0.0\AndroidManifest.xml:32:17-75
+132                android:value="androidx.startup" />
+132-->[androidx.emoji2:emoji2:1.0.0] C:\Users\Viaxor\.gradle\caches\transforms-2\files-2.1\855ada1558adb5e2fde7981d0ca34bc7\jetified-emoji2-1.0.0\AndroidManifest.xml:33:17-49
+133            <meta-data
+133-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\Viaxor\.gradle\caches\transforms-2\files-2.1\6badab79fed3c9c8a2f2b619123bfefc\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:31:13-33:52
+134                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+134-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\Viaxor\.gradle\caches\transforms-2\files-2.1\6badab79fed3c9c8a2f2b619123bfefc\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:32:17-78
+135                android:value="androidx.startup" />
+135-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\Viaxor\.gradle\caches\transforms-2\files-2.1\6badab79fed3c9c8a2f2b619123bfefc\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:33:17-49
+136        </provider>
+137
+138        <service
+138-->[com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\Viaxor\.gradle\caches\transforms-2\files-2.1\cb74c295b9422b3b873a0a54265f6e71\jetified-transport-backend-cct-2.3.3\AndroidManifest.xml:29:9-35:19
+139            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+139-->[com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\Viaxor\.gradle\caches\transforms-2\files-2.1\cb74c295b9422b3b873a0a54265f6e71\jetified-transport-backend-cct-2.3.3\AndroidManifest.xml:30:13-103
+140            android:exported="false" >
+140-->[com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\Viaxor\.gradle\caches\transforms-2\files-2.1\cb74c295b9422b3b873a0a54265f6e71\jetified-transport-backend-cct-2.3.3\AndroidManifest.xml:31:13-37
+141            <meta-data
+141-->[com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\Viaxor\.gradle\caches\transforms-2\files-2.1\cb74c295b9422b3b873a0a54265f6e71\jetified-transport-backend-cct-2.3.3\AndroidManifest.xml:32:13-34:39
+142                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+142-->[com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\Viaxor\.gradle\caches\transforms-2\files-2.1\cb74c295b9422b3b873a0a54265f6e71\jetified-transport-backend-cct-2.3.3\AndroidManifest.xml:33:17-94
+143                android:value="cct" />
+143-->[com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\Viaxor\.gradle\caches\transforms-2\files-2.1\cb74c295b9422b3b873a0a54265f6e71\jetified-transport-backend-cct-2.3.3\AndroidManifest.xml:34:17-36
+144        </service>
+145        <service
+145-->[com.google.android.datatransport:transport-runtime:2.2.6] C:\Users\Viaxor\.gradle\caches\transforms-2\files-2.1\188fd63190852be5d476181c2ca53b48\jetified-transport-runtime-2.2.6\AndroidManifest.xml:26:9-30:19
+146            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+146-->[com.google.android.datatransport:transport-runtime:2.2.6] C:\Users\Viaxor\.gradle\caches\transforms-2\files-2.1\188fd63190852be5d476181c2ca53b48\jetified-transport-runtime-2.2.6\AndroidManifest.xml:27:13-117
+147            android:exported="false"
+147-->[com.google.android.datatransport:transport-runtime:2.2.6] C:\Users\Viaxor\.gradle\caches\transforms-2\files-2.1\188fd63190852be5d476181c2ca53b48\jetified-transport-runtime-2.2.6\AndroidManifest.xml:28:13-37
+148            android:permission="android.permission.BIND_JOB_SERVICE" >
+148-->[com.google.android.datatransport:transport-runtime:2.2.6] C:\Users\Viaxor\.gradle\caches\transforms-2\files-2.1\188fd63190852be5d476181c2ca53b48\jetified-transport-runtime-2.2.6\AndroidManifest.xml:29:13-69
+149        </service>
+150
+151        <receiver
+151-->[com.google.android.datatransport:transport-runtime:2.2.6] C:\Users\Viaxor\.gradle\caches\transforms-2\files-2.1\188fd63190852be5d476181c2ca53b48\jetified-transport-runtime-2.2.6\AndroidManifest.xml:32:9-34:40
+152            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+152-->[com.google.android.datatransport:transport-runtime:2.2.6] C:\Users\Viaxor\.gradle\caches\transforms-2\files-2.1\188fd63190852be5d476181c2ca53b48\jetified-transport-runtime-2.2.6\AndroidManifest.xml:33:13-132
+153            android:exported="false" />
+153-->[com.google.android.datatransport:transport-runtime:2.2.6] C:\Users\Viaxor\.gradle\caches\transforms-2\files-2.1\188fd63190852be5d476181c2ca53b48\jetified-transport-runtime-2.2.6\AndroidManifest.xml:34:13-37
+154    </application>
+155
+156</manifest>

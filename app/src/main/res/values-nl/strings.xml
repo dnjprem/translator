@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="text_select_country">Kies Provincie</string>
+    <string name="text_search">Zoeken</string>
+    <string name="text_all_country">Alle landen</string>
+    <string name="text_no_country_found">Land niet gevonden…</string>
+    <string name="select_app_language">App-taal selecteren</string>
+    <string name="system_default">Systeemstandaard</string>
+    <string name="all_language">Alle talen</string>
+
+    <string name="text_onboard_first_title">Spraak en vertaal</string>
+    <string name="text_fir_onboard_first_sub_title">Gesproken taal omgezet in tekst</string>
+    <string name="text_sec_onboard_first_sub_title">en wordt dan vertaald.</string>
+
+    <string name="text_onboard_second_title">Tekst naar spraak vertalen</string>
+    <string name="text_fir_onboard_sec_sub_title">Tekst als invoer nemen, vertalen,</string>
+    <string name="text_sec_onboard_sec_sub_title">En hoorbare spraak als output geven</string>
+
+    <string name="text_onboard_third_title">Deel je vertaalde tekst</string>
+    <string name="text_fir_onboard_third_sub_title">Deel je Translates-speech met</string>
+    <string name="text_sec_onboard_third_sub_title">Je vrienden gebruiken Language Translator</string>
+
+    <string name="text_next">Volgende</string>
+    <string name="text_say_something">Zeg iets…</string>
+    <string name="text_device_not_support">Uw apparaat ondersteunt geen spraakfunctionaliteit</string>
+    <string name="text_lets_start">Laten we beginnen</string>
+    <string name="text_translate_language">Taal vertalen</string>
+    <string name="text_rate_app">Beoordeel app</string>
+    <string name="text_rating_and_review">Beoordeling en beoordeling</string>
+    <string name="text_with_your_friends">met je vrienden</string>
+    <string name="translated_text_hint">Vertaalde tekst</string>
+    <string name="unknown_error">Er is een onbekende fout opgetreden.</string>
+    <string name="source_text_hint">Voer tekst in</string>
+    <string name="text_phrases">Zinnen</string>
+    <string name="text_conversation">Gesprek</string>
+    <string name="text_setting">Instellingen</string>
+    <string name="text_translate">Vertalen</string>
+    <string name="text_phrase_book">Uitdrukkingenboek</string>
+    <string name="text_essentials">Essentials</string>
+    <string name="app_languages">Talen</string>
+    <string name="selected">Geselecteerd</string>
+    <string name="text_greetings">Gegroet</string>
+    <string name="text_basic">Basis</string>
+    <string name="text_copied">Tekst gekopieerd</string>
+    <string name="text_not_found">Tekst niet gevonden</string>
+    <string name="text_select_the_country">Selecteer het land</string>
+    <string name="text_please_download_language_first">Download eerst de taal</string>
+    <string name="text_downloading_start">Downloaden start</string>
+    <string name="text_already_downloaded">Al gedownload</string>
+    <string name="text_download_successfully">Download succesvol</string>
+    <string name="text_app_themes">App-thema\'s</string>
+    <string name="text_history">Geschiedenis</string>
+    <string name="text_share_app">App delen</string>
+    <string name="text_rate">Beoordeel ons</string>
+    <string name="text_privacy">Privacybeleid</string>
+    <string name="text_start_conversation">Start je gesprek</string>
+    <string name="text_tap_mic_button_to_start_conversation">Tik op microfoonknop om gesprek te starten</string>
+    <string name="text_translating">Vertalen…</string>
+    <string name="text_favorite">Favoriet</string>
+    <string name="text_no_history">Geen geschiedenis gevonden</string>
+    <string name="text_make_translation_history">Begin met vertalen</string>
+    <string name="text_no_favorite">Geen favoriete vertaling gevonden</string>
+    <string name="text_make_translation_favorite">Maak je vertaling favoriet</string>
+</resources>
