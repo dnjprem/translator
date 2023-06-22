@@ -210,6 +210,21 @@
         <item name="android:textSize">12sp</item>
     </style>
 
+
+    <style name="RatingBar" parent="@style/Theme.AppCompat">
+        <item name="colorControlActivated">#FF9800</item>
+        <item name="colorControlNormal">#FF9800</item>
+    </style>
+
+    <style name="styleButton">
+        <item name="android:fontFamily">@font/mfont_medium</item>
+        <item name="android:background">@drawable/bg_button</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/_13ssp</item>
+    </style>
+
     <declare-styleable name="SquareImageView">
         <attr name="hwRatio" format="float|reference" />
     </declare-styleable>

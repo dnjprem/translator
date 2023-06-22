@@ -16,25 +16,25 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <TextView
-            android:layout_marginEnd="@dimen/normal_margin"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/normal_margin"
             android:fontFamily="@font/plus_jakarta_sans_bold"
+            android:maxLines="1"
             android:text="@string/select_app_language"
             android:textColor="@color/colorSecondaryDark"
             android:textSize="20sp"
-            android:maxLines="1"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/language_selected"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
         <ImageView
-            android:scaleType="fitEnd"
             android:id="@+id/language_selected"
             android:layout_width="35dp"
             android:layout_height="35dp"
             android:padding="10dp"
+            android:scaleType="fitEnd"
             android:src="@drawable/ic_checked"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -47,6 +47,7 @@
         style="@style/SystemLanguageTextStyle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/normal_margin"
         android:layout_marginHorizontal="@dimen/normal_margin"
         android:text="@string/system_default"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
@@ -80,12 +81,12 @@
 
 
         <TextView
-            android:text="Hello Bhai"
             android:id="@+id/txt_language_name"
             style="@style/SelectLanguageSubTitleStyle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
+            android:text="Hello Bhai"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintLeft_toRightOf="@+id/image_card"
             app:layout_constraintTop_toTopOf="parent" />
@@ -119,6 +120,25 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_marginTop="@dimen/normal_margin"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/cardViewAds"
         app:layout_constraintTop_toBottomOf="@+id/text_all_country" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewAds"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_3sdp"
+        app:cardCornerRadius="@dimen/_5sdp"
+        app:cardElevation="@dimen/_3sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/language_rcv">
+
+        <FrameLayout
+            android:id="@+id/frameViewAds"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone" />
+
+    </androidx.cardview.widget.CardView>
 </androidx.constraintlayout.widget.ConstraintLayout>

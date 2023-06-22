@@ -1,11 +1,5 @@
 package com.google.mlkit.samples.nl.translate.java.activity;
 
-import androidx.activity.result.ActivityResultLauncher;
-import androidx.activity.result.contract.ActivityResultContracts;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
-
 import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.content.Intent;
@@ -20,27 +14,23 @@ import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.ImageView;
-import android.widget.TextView;
 import android.widget.Toast;
+
+import androidx.activity.result.ActivityResultLauncher;
+import androidx.activity.result.contract.ActivityResultContracts;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.google.android.material.progressindicator.CircularProgressIndicator;
 import com.google.mlkit.samples.nl.translate.R;
+import com.google.mlkit.samples.nl.translate.java.Ads.ADCLBAppLoadAds;
 import com.google.mlkit.samples.nl.translate.java.adapter.CountryAdapter;
 import com.google.mlkit.samples.nl.translate.java.listener.CountryClickListener;
-import com.google.mlkit.samples.nl.translate.java.listener.TranslateListener;
-import com.google.mlkit.samples.nl.translate.java.model.Conversation;
 import com.google.mlkit.samples.nl.translate.java.model.Country;
 import com.google.mlkit.samples.nl.translate.java.utils.CountrySelector;
-import com.google.mlkit.samples.nl.translate.java.utils.DataTranslator;
 import com.google.mlkit.samples.nl.translate.java.utils.GeneralPreference;
 
 import java.util.ArrayList;
-import java.util.Collection;
-import java.util.Collections;
-import java.util.Comparator;
-import java.util.Date;
-import java.util.Locale;
-import java.util.stream.Collectors;
 
 public class CountryActivity extends RootActivity implements CountryClickListener {
 
@@ -55,12 +45,16 @@ public class CountryActivity extends RootActivity implements CountryClickListene
     ArrayList<String> outputResult = null;
     Handler mainHandler = new Handler(Looper.getMainLooper());
 
-
     @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_country);
+
+        // For Dynamic Ads
+        ADCLBAppLoadAds.getInstance().displayDyanamicBottomAds(this, findViewById(R.id.frameViewAds));
+
+
         GeneralPreference.showStatusBar(this, R.color.colorPrimaryLight);
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
             getWindow().getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR); // to make status bar icon dark

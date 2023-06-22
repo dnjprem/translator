@@ -13,6 +13,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.google.mlkit.samples.nl.translate.R;
+import com.google.mlkit.samples.nl.translate.java.Ads.ADCLBAppLoadAds;
 import com.google.mlkit.samples.nl.translate.java.adapter.SelectLanguageAdapter;
 import com.google.mlkit.samples.nl.translate.java.listener.SelectLanguageClickListener;
 import com.google.mlkit.samples.nl.translate.java.model.SelectLanguage;
@@ -38,12 +39,17 @@ public class SelectLanguageActivity extends RootActivity implements SelectLangua
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_select_language);
+
+        // For WRAP_CONTENT ADS
+        ADCLBAppLoadAds.getInstance().displayDyanamicBottomAds(this, findViewById(R.id.frameViewAds));
+
         GeneralPreference.showStatusBar(this, R.color.white);
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
             getWindow().getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR);   // to make status bar icon dark
         }
 
         defaultLanguage = preference.getString("defaultLanguage", Locale.getDefault().getLanguage()); // byDefault -> en
+
 
         if (preference.getBoolean("isSelectLanguageOpenFirstTime", false)) {
             Intent intent = new Intent(this, OnBoardingActivity.class);
@@ -52,7 +58,6 @@ public class SelectLanguageActivity extends RootActivity implements SelectLangua
 //            overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
         }
 
-//        ,  ,  ,  ,  ,  ,  ,  ,  ,  ,  ,  ,  ,  ,  ,  ,  ,  ,  ,  ,  ,  ,  ,  ,
         languageList.add(new SelectLanguage("en", "English", R.drawable.flag_united_states_of_america, false));
         languageList.add(new SelectLanguage("hi", "Hindi", R.drawable.flag_india, false));
         languageList.add(new SelectLanguage("es", "Spanish", R.drawable.flag_spain, false));

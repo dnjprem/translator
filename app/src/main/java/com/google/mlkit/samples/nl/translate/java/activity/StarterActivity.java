@@ -2,6 +2,7 @@ package com.google.mlkit.samples.nl.translate.java.activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Build;
@@ -12,6 +13,7 @@ import android.widget.ImageView;
 import com.google.android.material.card.MaterialCardView;
 import com.google.mlkit.samples.nl.translate.BuildConfig;
 import com.google.mlkit.samples.nl.translate.R;
+import com.google.mlkit.samples.nl.translate.java.Ads.ADCLBAppLoadAds;
 import com.google.mlkit.samples.nl.translate.java.utils.GeneralPreference;
 
 public class StarterActivity extends AppCompatActivity {
@@ -21,6 +23,7 @@ public class StarterActivity extends AppCompatActivity {
     MaterialCardView card_rate;
     MaterialCardView card_share;
 
+    @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -29,6 +32,9 @@ public class StarterActivity extends AppCompatActivity {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
             getWindow().getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR);   // to make status bar icon dark
         }
+
+        ADCLBAppLoadAds.getInstance().displayDyanamicBottomAds(this, findViewById(R.id.frameViewAds));
+
 
         card_start = findViewById(R.id.card_start);
         card_rate = findViewById(R.id.card_rate);

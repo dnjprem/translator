@@ -11,6 +11,7 @@ import androidx.viewpager.widget.ViewPager;
 
 import com.google.android.material.tabs.TabLayout;
 import com.google.mlkit.samples.nl.translate.R;
+import com.google.mlkit.samples.nl.translate.java.Ads.ADCLBAppLoadAds;
 import com.google.mlkit.samples.nl.translate.java.adapter.OnBoardingAdapter;
 import com.google.mlkit.samples.nl.translate.java.model.OnBoarding;
 import com.google.mlkit.samples.nl.translate.java.utils.GeneralPreference;
@@ -29,6 +30,9 @@ public class OnBoardingActivity extends RootActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_on_boarding);
+
+        ADCLBAppLoadAds.getInstance().displayDyanamicBottomAds(this, findViewById(R.id.frameViewAds));
+
 
         GeneralPreference.showStatusBar(this, R.color.white);
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
@@ -57,8 +61,10 @@ public class OnBoardingActivity extends RootActivity {
             @Override
             public void onTabSelected(TabLayout.Tab tab) {
                 if (tab.getPosition() == onBoardings.size() - 1) {
+                    tab_indicator.setVisibility(View.GONE);
                     btn_next.setVisibility(View.VISIBLE);
                 } else {
+                    tab_indicator.setVisibility(View.VISIBLE);
                     btn_next.setVisibility(View.INVISIBLE);
                 }
             }
