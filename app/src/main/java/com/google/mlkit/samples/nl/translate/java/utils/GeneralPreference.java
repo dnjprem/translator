@@ -4,7 +4,6 @@ import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.content.Context;
 import android.content.res.Configuration;
-import android.os.Build;
 import android.util.Log;
 import android.view.Window;
 import android.view.WindowManager;
@@ -14,7 +13,6 @@ import androidx.core.content.ContextCompat;
 import com.google.mlkit.nl.translate.TranslateLanguage;
 import com.google.mlkit.samples.nl.translate.R;
 import com.google.mlkit.samples.nl.translate.java.model.Conversation;
-import com.google.mlkit.samples.nl.translate.java.model.Country;
 import com.google.mlkit.samples.nl.translate.java.model.History;
 import com.google.mlkit.samples.nl.translate.java.model.Language;
 
@@ -45,12 +43,12 @@ public class GeneralPreference {
     }
 
     public static void showStatusBar(Activity activity, int color) {
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-            Window window = activity.getWindow();
-            activity.getWindow().clearFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN);
-            window.setStatusBarColor(ContextCompat.getColor(activity, color));
-            window.setNavigationBarColor(ContextCompat.getColor(activity, color));
-        }
+//        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+        Window window = activity.getWindow();
+        activity.getWindow().clearFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN);
+        window.setStatusBarColor(ContextCompat.getColor(activity, color));
+        window.setNavigationBarColor(ContextCompat.getColor(activity, color));
+//        }
     }
 
     public static void setLanguageForApp(Context context, String languageToLoad) {
@@ -120,19 +118,9 @@ public class GeneralPreference {
         }
     }
 
-    public static int isDateExist(ArrayList<Object> finalList, String date) {
-        format(date);
-        int dateCount = 0;
-        for (Object item : finalList) {
-            if (item instanceof String && ((String) item).equals(date)) {
-                return dateCount++;
-            }
-        }
-        return dateCount;
-    }
     private static boolean isExist(ArrayList<Object> finalList, String date) {
         for (Object item : finalList) {
-            if (item instanceof String && ((String) item).equals(date)) {
+            if (item instanceof String && item.equals(date)) {
                 return true;
             }
         }
@@ -140,7 +128,7 @@ public class GeneralPreference {
     }
 
     @SuppressLint("SimpleDateFormat")
-    private static String format(String time) {
+    public static String format(String time) {
         SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd hh:mm:ss a");
         SimpleDateFormat timeFormat = new SimpleDateFormat("MMM dd, yyyy");
         try {

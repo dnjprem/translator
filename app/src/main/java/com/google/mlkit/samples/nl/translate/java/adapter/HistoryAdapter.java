@@ -1,6 +1,5 @@
 package com.google.mlkit.samples.nl.translate.java.adapter;
 
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -11,7 +10,7 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.google.mlkit.samples.nl.translate.R;
-import com.google.mlkit.samples.nl.translate.java.database.DataBaseHelper;
+import com.google.mlkit.samples.nl.translate.java.listener.FavoriteClickListener;
 import com.google.mlkit.samples.nl.translate.java.model.History;
 import com.google.mlkit.samples.nl.translate.java.utils.GeneralPreference;
 
@@ -21,16 +20,14 @@ import java.util.Locale;
 public class HistoryAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
 
     ArrayList<Object> histories;
-    DataBaseHelper helper;
-    boolean isFavoriteScreen;
+    FavoriteClickListener listener;
 
     private static final int TYPE_ITEM_DATE_CONTAINER = 0; // for DateTime View
     private static final int TYPE_ITEM_HISTORY = 1; // for Conversation View
 
-    public HistoryAdapter(DataBaseHelper helper, ArrayList<History> histories, boolean isFavoriteScreen) {
+    public HistoryAdapter(ArrayList<History> histories,  FavoriteClickListener listener) {
         this.histories = GeneralPreference.sortHistories(histories);
-        this.helper = helper;
-        this.isFavoriteScreen = isFavoriteScreen;
+        this.listener = listener;
     }
 
     @NonNull
@@ -59,18 +56,10 @@ public class HistoryAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder
                 holder.img_favorite.setImageResource(R.drawable.ic_like);
             }
 
-
-            if (isFavoriteScreen) {
-                holder.img_favorite.setOnClickListener(view -> {
-                    item.setIsFavorite(setFavorite(item.getIsFavorite()));
-                    removeHistory(item.getId(), item.getIsFavorite(), position);
-                });
-            } else {
-                holder.img_favorite.setOnClickListener(view -> {
-                    item.setIsFavorite(setFavorite(item.getIsFavorite()));
-                    updateHistory(item.getId(), item.getIsFavorite(), position);
-                });
-            }
+            holder.img_favorite.setOnClickListener(view -> {
+                item.setIsFavorite(setFavorite(item.getIsFavorite()));
+                listener.onClick(histories, item.getId(), item.getIsFavorite(), position);
+            });
 
             if (holder.getItemViewType() == TYPE_ITEM_HISTORY) {
                 holder.text_source_language.setText(new Locale(item.getSourceCode()).getDisplayName());
@@ -133,21 +122,6 @@ public class HistoryAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder
         if (fav == 0) return 1;
         if (fav == 1) return 0;
         return fav;
-    }
-
-    public void updateHistory(int id, int isFav, int pos) {
-        helper.updateHistoryData(id, isFav);
-        notifyItemChanged(pos);
-    }
-
-    public void removeHistory(int id, int isFav, int position) {
-        History item = (History) histories.get(position);
-        int dateCount = GeneralPreference.isDateExist(histories, item.getSourceDate());
-        Log.d("=================> ", "Date Count is - " + dateCount);
-
-        helper.updateHistoryData(id, isFav);
-//        histories.remove(position);
-        notifyDataSetChanged();
     }
 
 }

@@ -7,6 +7,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.annotation.SuppressLint;
 import android.os.Build;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
@@ -15,13 +16,14 @@ import android.widget.TextView;
 import com.google.mlkit.samples.nl.translate.R;
 import com.google.mlkit.samples.nl.translate.java.adapter.HistoryAdapter;
 import com.google.mlkit.samples.nl.translate.java.database.DataBaseHelper;
+import com.google.mlkit.samples.nl.translate.java.listener.FavoriteClickListener;
 import com.google.mlkit.samples.nl.translate.java.model.History;
 import com.google.mlkit.samples.nl.translate.java.utils.GeneralPreference;
 import com.theophrast.ui.widget.SquareImageView;
 
 import java.util.ArrayList;
 
-public class HistoryActivity extends AppCompatActivity {
+public class HistoryActivity extends AppCompatActivity implements FavoriteClickListener {
 
     ImageView img_back;
     TextView text_screen_title;
@@ -46,8 +48,7 @@ public class HistoryActivity extends AppCompatActivity {
         helper = new DataBaseHelper(this);
         GeneralPreference.showStatusBar(this, R.color.colorPrimaryLight);
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
-            // to make status bar icon dark
-            getWindow().getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR);
+            getWindow().getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR);  // to make status bar icon dark
         }
         isFavoriteScreen = getIntent().getBooleanExtra("isFavoriteScreen", false);
         histories = helper.getAllHistory();
@@ -67,19 +68,22 @@ public class HistoryActivity extends AppCompatActivity {
                     favoriteList.add(item);
                 }
             }
+
             if (favoriteList.size() > 0) {
                 layout_background.setVisibility(View.GONE);
             }
-            adapter = new HistoryAdapter(helper, favoriteList, isFavoriteScreen);
+            adapter = new HistoryAdapter(favoriteList, this);
+
         } else {
             if (histories.size() > 0) {
                 layout_background.setVisibility(View.GONE);
             }
-            adapter = new HistoryAdapter(helper, histories, isFavoriteScreen);
+            adapter = new HistoryAdapter(histories, this);
         }
 
         history_rcv.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false));
         history_rcv.setAdapter(adapter);
+
 
         img_back.setOnClickListener(view -> {
             setResult(RESULT_CANCELED);
@@ -103,5 +107,49 @@ public class HistoryActivity extends AppCompatActivity {
             text_title.setText(R.string.text_no_history);
             text_sub_title.setText(R.string.text_make_translation_history);
         }
+    }
+
+    @Override
+    public void onClick(ArrayList<Object> historyObject, int id, int isFav, int position) {
+        if (isFavoriteScreen) {
+            removeFavoriteHistory(historyObject, id, isFav, position);
+        } else {
+            helper.updateHistoryData(id, isFav);
+            adapter.notifyItemChanged(position);
+        }
+        if (adapter.getItemCount() == 0) {
+            layout_background.setVisibility(View.VISIBLE);
+        }
+    }
+
+    @SuppressLint("NotifyDataSetChanged")
+    private void removeFavoriteHistory(ArrayList<Object> historyObject, int id, int isFav, int position) {
+        int favoriteItem = getFavoriteItemCount(historyObject, position);
+        helper.updateHistoryData(id, isFav);
+        if (favoriteItem == 1) {
+            historyObject.remove(position);
+            historyObject.remove(position - 1);
+        } else if (favoriteItem > 1) {
+            historyObject.remove(position);
+        }
+        adapter.notifyDataSetChanged();
+    }
+
+    private int getFavoriteItemCount(ArrayList<Object> historyObject, int position) {
+        int dateCount = 0;
+        if (historyObject.get(position) instanceof History) {
+            History item = (History) historyObject.get(position);
+
+            for (Object o : historyObject) {
+                if (o instanceof History) {
+                    History that = (History) o;
+                    if (GeneralPreference.format(that.getSourceDate()).equals(GeneralPreference.format(item.getSourceDate()))) {
+                        dateCount++;
+                    }
+                }
+            }
+            Log.d("=================> ", "Date Count is - " + dateCount);
+        }
+        return dateCount;
     }
 }
