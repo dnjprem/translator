@@ -1,5 +1,1 @@
-rootProject.name = 'mlkit_translate_sample'
-
 include ':app'
-include ':internal:chooserx'
-project(':internal:chooserx').projectDir = file('../internal/chooserx')

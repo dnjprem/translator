@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/colorPrimaryLight"
-    tools:context=".java.activity.EssentialActivity">
+    tools:context=".languagetranslator.activity.EssentialActivity">
 
 
     <RelativeLayout
@@ -59,8 +59,24 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_marginTop="@dimen/normal_margin"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/cardViewAds"
         app:layout_constraintTop_toBottomOf="@+id/layout_tab" />
+
+    <androidx.cardview.widget.CardView
+        app:cardCornerRadius="0dp"
+        android:id="@+id/cardViewAds"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <FrameLayout
+            android:id="@+id/frameViewAds"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone" />
+
+    </androidx.cardview.widget.CardView>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

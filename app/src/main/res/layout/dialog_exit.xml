@@ -26,7 +26,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/_100sdp"
                 android:layout_margin="@dimen/_10sdp"
-                android:src="@drawable/ic_exit" />
+                android:src="@drawable/ic_exit_app" />
 
             <TextView
                 android:layout_width="fill_parent"
@@ -34,7 +34,7 @@
                 android:layout_marginTop="@dimen/_5sdp"
                 android:fontFamily="@font/mfont_medium"
                 android:gravity="center"
-                android:text="Exit App"
+                android:text="@string/text_exit_app"
                 android:textAppearance="?android:textAppearanceLarge"
                 android:textColor="@color/black"
                 android:textSize="@dimen/_16ssp" />
@@ -46,7 +46,7 @@
                 android:layout_marginTop="@dimen/_5sdp"
                 android:fontFamily="@font/mfont"
                 android:gravity="center"
-                android:text="Are you sure want to exit this app ?"
+                android:text="@string/text_are_you_sure_want_to_exit"
                 android:textColor="@android:color/black"
                 android:textSize="@dimen/_14ssp" />
 
@@ -70,7 +70,7 @@
                         android:background="@drawable/bg_button"
                         android:fontFamily="@font/mfont_medium"
                         android:gravity="center"
-                        android:text="No"
+                        android:text="@string/text_no"
                         android:textColor="@color/white"
                         android:textSize="@dimen/_12ssp" />
 
@@ -90,7 +90,7 @@
                         android:background="@drawable/bg_button"
                         android:fontFamily="@font/mfont_medium"
                         android:gravity="center"
-                        android:text="Yes"
+                        android:text="@string/text_yes"
                         android:textColor="@color/white"
                         android:textSize="@dimen/_12ssp" />
 
@@ -107,6 +107,7 @@
                 app:cardElevation="@dimen/_3sdp">
 
                 <TextView
+                    android:visibility="gone"
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/_210sdp"
                     android:layout_gravity="center"

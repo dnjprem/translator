@@ -61,4 +61,8 @@
     <string name="text_make_translation_history">Start venligst oversættelse</string>
     <string name="text_no_favorite">Ingen favoritoversættelse fundet</string>
     <string name="text_make_translation_favorite">Gør din oversættelse til favorit</string>
+    <string name="text_exit_app">Afslut app</string>
+    <string name="text_are_you_sure_want_to_exit">Er du sikker på, at du vil afslutte denne app?</string>
+    <string name="text_no">ingen</string>
+    <string name="text_yes">Ja</string>
 </resources>

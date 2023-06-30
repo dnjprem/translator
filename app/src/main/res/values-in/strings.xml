@@ -61,4 +61,8 @@
     <string name="text_make_translation_history">Silakan Mulai Terjemahan</string>
     <string name="text_no_favorite">Tidak Ditemukan Terjemahan Favorit</string>
     <string name="text_make_translation_favorite">Jadikan Terjemahan Anda Favorit</string>
+    <string name="text_exit_app">Keluar dari aplikasi</string>
+    <string name="text_are_you_sure_want_to_exit">Anda yakin ingin keluar dari aplikasi ini?</string>
+    <string name="text_no">TIDAK</string>
+    <string name="text_yes">Ya</string>
 </resources>

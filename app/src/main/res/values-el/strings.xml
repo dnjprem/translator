@@ -61,4 +61,8 @@
     <string name="text_make_translation_history">Ξεκινήστε τη μετάφραση</string>
     <string name="text_no_favorite">Δεν βρέθηκε αγαπημένη μετάφραση</string>
     <string name="text_make_translation_favorite">Κάντε τη μετάφρασή σας αγαπημένη</string>
+    <string name="text_exit_app">Έξοδος από την εφαρμογή</string>
+    <string name="text_are_you_sure_want_to_exit">Είστε βέβαιοι ότι θέλετε να βγείτε από αυτήν την εφαρμογή;</string>
+    <string name="text_no">όχι</string>
+    <string name="text_yes">Ναί</string>
 </resources>

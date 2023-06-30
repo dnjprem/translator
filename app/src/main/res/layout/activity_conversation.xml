@@ -4,9 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-
     android:background="@color/colorPrimaryLight"
-    tools:context=".java.activity.ConversationActivity">
+    tools:context=".languagetranslator.activity.ConversationActivity">
 
     <RelativeLayout
         android:id="@+id/layout_back"
@@ -34,32 +33,48 @@
 
     </RelativeLayout>
 
+    <androidx.cardview.widget.CardView
+        app:layout_constraintTop_toBottomOf="@+id/layout_back"
+        android:id="@+id/cardViewAds"
+        app:cardCornerRadius="0dp"
+        app:cardElevation="3dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <FrameLayout
+            android:id="@+id/frameViewAds"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone" />
+
+    </androidx.cardview.widget.CardView>
+
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/conversation_rcv"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_marginVertical="@dimen/normal_margin"
+        android:layout_marginBottom="@dimen/normal_margin"
         app:layout_constraintBottom_toTopOf="@+id/language_translator_toggle"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/layout_back" />
+        app:layout_constraintTop_toBottomOf="@+id/cardViewAds" />
 
     <LinearLayout
         android:id="@+id/layout_background"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
         android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/language_translator_toggle"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/layout_back">
+        app:layout_constraintTop_toBottomOf="@+id/cardViewAds">
 
 
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="250dp"
+        <com.theophrast.ui.widget.SquareImageView
+            android:layout_width="250dp"
+            android:layout_height="0dp"
             android:layout_gravity="center_horizontal"
-            android:layout_margin="30dp"
             android:src="@drawable/fg_conversation_screen" />
 
         <TextView

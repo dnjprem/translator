@@ -61,4 +61,8 @@
     <string name="text_make_translation_history">Моля, започнете превод</string>
     <string name="text_no_favorite">Няма намерен любим превод</string>
     <string name="text_make_translation_favorite">Направете своя превод любим</string>
+    <string name="text_exit_app">Изход от приложението</string>
+    <string name="text_are_you_sure_want_to_exit">Наистина ли искате да излезете от това приложение?</string>
+    <string name="text_no">не</string>
+    <string name="text_yes">да</string>
 </resources>

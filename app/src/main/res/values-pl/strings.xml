@@ -61,4 +61,8 @@
     <string name="text_make_translation_history">Rozpocznij tłumaczenie</string>
     <string name="text_no_favorite">Nie znaleziono ulubionego tłumaczenia</string>
     <string name="text_make_translation_favorite">Dodaj swoje tłumaczenie do ulubionych</string>
+    <string name="text_exit_app">Wyjdź z aplikacji</string>
+    <string name="text_are_you_sure_want_to_exit">Czy na pewno chcesz zamknąć tę aplikację?</string>
+    <string name="text_no">NIE</string>
+    <string name="text_yes">Tak</string>
 </resources>

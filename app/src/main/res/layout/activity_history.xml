@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/colorPrimaryLight"
-    tools:context=".java.activity.HistoryActivity">
+    tools:context=".languagetranslator.activity.HistoryActivity">
 
     <RelativeLayout
         android:id="@+id/layout_back"
@@ -39,7 +39,7 @@
         android:id="@+id/history_rcv"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/cardViewAds"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/layout_back" />
@@ -48,11 +48,9 @@
         android:id="@+id/layout_background"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
         android:orientation="vertical"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/layout_back">
+        app:layout_constraintBottom_toTopOf="@+id/cardViewAds"
+        app:layout_constraintTop_toTopOf="@+id/layout_back">
 
 
         <com.theophrast.ui.widget.SquareImageView
@@ -81,6 +79,21 @@
             android:text="@string/text_make_translation_history" />
 
     </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewAds"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <FrameLayout
+            android:id="@+id/frameViewAds"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone" />
+
+    </androidx.cardview.widget.CardView>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

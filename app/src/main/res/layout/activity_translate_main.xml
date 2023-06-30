@@ -1,13 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-
-
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/bg_translate_main"
-    tools:context="com.google.mlkit.samples.nl.translate.java.activity.MainActivity">
+    tools:context="com.voicetranslator.translate.languagetranslator.activity.MainActivity">
 
     <TextView
         android:id="@+id/header"
@@ -19,283 +17,299 @@
         android:text="@string/app_title"
         android:textColor="@color/white"
         android:textSize="18sp"
-        app:layout_constraintBottom_toTopOf="@+id/language_translator_toggle"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <LinearLayout
-        android:id="@+id/language_translator_toggle"
+    <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginHorizontal="@dimen/high_margin"
-        android:layout_marginVertical="@dimen/normal_margin"
-        android:gravity="center"
-        android:orientation="horizontal"
-        android:weightSum="3"
-        app:layout_constraintBottom_toTopOf="@+id/source_card_view"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/normal_margin"
+        android:layout_marginBottom="@dimen/high_margin"
+        app:layout_constraintBottom_toTopOf="@+id/layout_bottom"
         app:layout_constraintTop_toBottomOf="@+id/header">
 
-        <RelativeLayout
-            android:id="@+id/layout_source_selector"
+        <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:background="@drawable/drawable_rounded_rectangle">
+            android:layout_height="wrap_content">
 
-            <TextView
-                android:id="@+id/sourceLangSelector"
-                style="@style/SelectLanguageSubTitleStyle"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerInParent="true"
-                android:gravity="center"
-                android:maxLines="1"
-                android:paddingEnd="6dp" />
-
-            <ImageView
-                android:layout_width="10dp"
-                android:layout_height="10dp"
-                android:layout_alignParentEnd="true"
-                android:layout_centerVertical="true"
-                android:layout_marginEnd="8dp"
-                android:src="@drawable/ic_down" />
-
-        </RelativeLayout>
-
-
-        <ImageView
-            android:id="@+id/buttonSwitchLang"
-            style="@style/IconOnlyButton"
-            android:layout_width="match_parent"
-            android:layout_height="30dp"
-            android:layout_weight="1"
-            android:src="@drawable/ic_translate" />
-
-        <RelativeLayout
-            android:id="@+id/layout_target_selector"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:background="@drawable/drawable_rounded_rectangle">
-
-            <TextView
-                android:id="@+id/targetLangSelector"
-                style="@style/SelectLanguageSubTitleStyle"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerInParent="true"
-                android:gravity="center"
-                android:paddingEnd="6dp" />
-
-
-            <ImageView
-                android:layout_width="10dp"
-                android:layout_height="10dp"
-                android:layout_alignParentEnd="true"
-                android:layout_centerVertical="true"
-                android:layout_marginEnd="8dp"
-                android:src="@drawable/ic_down" />
-
-        </RelativeLayout>
-
-
-    </LinearLayout>
-
-    <com.google.android.material.card.MaterialCardView
-        android:id="@+id/source_card_view"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginHorizontal="@dimen/normal_margin"
-        android:layout_marginTop="@dimen/high_margin"
-        app:cardCornerRadius="14dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/language_translator_toggle">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="@dimen/high_margin"
-            android:orientation="vertical">
 
             <LinearLayout
-                android:layout_width="wrap_content"
+                android:id="@+id/language_translator_toggle"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:gravity="center_vertical">
+                android:layout_marginHorizontal="@dimen/high_margin"
+                android:layout_marginBottom="@dimen/normal_margin"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="3"
+                app:layout_constraintBottom_toTopOf="@+id/source_card_view">
 
-
-                <TextView
-                    android:id="@+id/txt_show_selected_language"
-                    style="@style/SelectLanguageSubTitleStyle"
-                    android:layout_width="wrap_content"
+                <RelativeLayout
+                    android:id="@+id/layout_source_selector"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:fontFamily="@font/plus_jakarta_sans_regular"
-                    android:text="Hello" />
-
-                <ImageView
-                    android:id="@+id/img_source_speak"
-                    android:layout_width="24dp"
-                    android:layout_height="24dp"
-                    android:layout_marginStart="@dimen/high_margin"
-                    android:padding="4dp"
-                    android:src="@drawable/ic_volume" />
-
-            </LinearLayout>
-
-
-            <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/sourceText"
-                android:layout_width="match_parent"
-                android:layout_height="100dp"
-                android:layout_marginVertical="@dimen/normal_margin"
-                android:background="@color/white"
-                android:gravity="top"
-                android:hint="@string/source_text_hint"
-                android:inputType="textMultiLine"
-                android:textColorHint="@color/placeholder" />
-
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_centerVertical="true"
-                    android:orientation="horizontal">
-
-                    <ImageView
-                        android:id="@+id/img_copy_source"
-                        android:layout_width="28dp"
-                        android:layout_height="28dp"
-                        android:layout_gravity="center_vertical"
-                        android:src="@drawable/ic_copy_with_bg"
-                        tools:ignore="ImageContrastCheck" />
-
-                    <ImageView
-                        android:id="@+id/img_mic_source"
-                        android:layout_width="28dp"
-                        android:layout_height="28dp"
-                        android:layout_gravity="center_vertical"
-                        android:layout_marginStart="10dp"
-                        android:src="@drawable/ic_mic_with_bg"
-                        tools:ignore="ImageContrastCheck" />
-
-                </LinearLayout>
-
-                <com.google.android.material.button.MaterialButton
-                    android:id="@+id/btn_translate"
-                    android:layout_width="120dp"
-                    android:layout_height="50dp"
-                    android:layout_alignParentEnd="true"
-                    android:layout_centerVertical="true"
-                    android:fontFamily="@font/plus_jakarta_sans_regular"
-                    android:text="@string/text_translate"
-                    android:textAllCaps="false"
-                    app:cornerRadius="6dp" />
-
-
-            </RelativeLayout>
-
-        </LinearLayout>
-
-
-    </com.google.android.material.card.MaterialCardView>
-
-
-    <com.google.android.material.card.MaterialCardView
-        android:id="@+id/target_card_view"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginHorizontal="@dimen/normal_margin"
-        android:layout_marginTop="@dimen/high_margin"
-        android:backgroundTint="@color/translated_language_bg"
-        app:cardCornerRadius="14dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/source_card_view">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="@dimen/high_margin"
-            android:orientation="vertical">
-
-
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:gravity="center_vertical">
+                    android:layout_weight="1"
+                    android:background="@drawable/drawable_rounded_rectangle">
 
                     <TextView
-                        android:id="@+id/txt_show_target_language"
+                        android:id="@+id/sourceLangSelector"
                         style="@style/SelectLanguageSubTitleStyle"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/plus_jakarta_sans_regular"
-                        android:text="Hello" />
+                        android:layout_centerInParent="true"
+                        android:gravity="center"
+                        android:maxLines="1"
+                        android:paddingEnd="6dp" />
 
                     <ImageView
-                        android:id="@+id/img_target_speak"
-                        android:layout_width="24dp"
-                        android:layout_height="24dp"
-                        android:layout_marginStart="@dimen/high_margin"
-                        android:padding="4dp"
-                        android:src="@drawable/ic_volume" />
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="8dp"
+                        android:src="@drawable/ic_down" />
 
-                </LinearLayout>
+                </RelativeLayout>
+
+
+                <ImageView
+                    android:id="@+id/buttonSwitchLang"
+                    style="@style/IconOnlyButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/ic_translate" />
+
+                <RelativeLayout
+                    android:id="@+id/layout_target_selector"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/drawable_rounded_rectangle">
+
+                    <TextView
+                        android:id="@+id/targetLangSelector"
+                        style="@style/SelectLanguageSubTitleStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:gravity="center"
+                        android:paddingEnd="6dp" />
+
+
+                    <ImageView
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="8dp"
+                        android:src="@drawable/ic_down" />
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/source_card_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/normal_margin"
+                android:layout_marginTop="@dimen/high_margin"
+                app:cardCornerRadius="14dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/language_translator_toggle">
 
                 <LinearLayout
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_alignParentEnd="true"
-                    android:layout_centerVertical="true"
-                    android:orientation="horizontal">
+                    android:layout_margin="@dimen/high_margin"
+                    android:orientation="vertical">
 
-                    <ImageView
-                        android:id="@+id/img_copy_target"
-                        android:layout_width="28dp"
-                        android:layout_height="28dp"
-                        android:src="@drawable/ic_copy_with_bg" />
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical">
 
-                    <ImageView
-                        android:id="@+id/img_share"
-                        android:layout_width="28dp"
-                        android:layout_height="28dp"
-                        android:layout_marginStart="10dp"
-                        android:src="@drawable/ic_share_with_bg"
-                        tools:ignore="ImageContrastCheck" />
+
+                        <TextView
+                            android:id="@+id/txt_show_selected_language"
+                            style="@style/SelectLanguageSubTitleStyle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/plus_jakarta_sans_regular"
+                            android:text="Hello" />
+
+                        <ImageView
+                            android:id="@+id/img_source_speak"
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:layout_marginStart="@dimen/high_margin"
+                            android:padding="4dp"
+                            android:src="@drawable/ic_volume" />
+
+                    </LinearLayout>
+
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/sourceText"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:layout_marginVertical="@dimen/normal_margin"
+                        android:background="@color/white"
+                        android:gravity="top"
+                        android:hint="@string/source_text_hint"
+                        android:inputType="textMultiLine"
+                        android:textColorHint="@color/placeholder" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/img_copy_source"
+                                android:layout_width="28dp"
+                                android:layout_height="28dp"
+                                android:layout_gravity="center_vertical"
+                                android:src="@drawable/ic_copy_with_bg"
+                                tools:ignore="ImageContrastCheck" />
+
+                            <ImageView
+                                android:id="@+id/img_mic_source"
+                                android:layout_width="28dp"
+                                android:layout_height="28dp"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginStart="10dp"
+                                android:src="@drawable/ic_mic_with_bg"
+                                tools:ignore="ImageContrastCheck" />
+
+                        </LinearLayout>
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/btn_translate"
+                            android:layout_width="120dp"
+                            android:layout_height="50dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:fontFamily="@font/plus_jakarta_sans_regular"
+                            android:text="@string/text_translate"
+                            android:textAllCaps="false"
+                            app:cornerRadius="6dp" />
+
+
+                    </RelativeLayout>
 
                 </LinearLayout>
 
-            </RelativeLayout>
 
+            </com.google.android.material.card.MaterialCardView>
 
-            <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/targetText"
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/target_card_view"
                 android:layout_width="match_parent"
-                android:layout_height="100dp"
-                android:layout_marginVertical="@dimen/normal_margin"
-                android:background="@color/translated_language_bg"
-                android:gravity="top"
-                android:inputType="textMultiLine" />
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/normal_margin"
+                android:layout_marginTop="@dimen/high_margin"
+                android:backgroundTint="@color/translated_language_bg"
+                app:cardCornerRadius="14dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/source_card_view">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/high_margin"
+                    android:orientation="vertical">
 
 
-        </LinearLayout>
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical">
+
+                            <TextView
+                                android:id="@+id/txt_show_target_language"
+                                style="@style/SelectLanguageSubTitleStyle"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/plus_jakarta_sans_regular"
+                                android:text="Hello" />
+
+                            <ImageView
+                                android:id="@+id/img_target_speak"
+                                android:layout_width="24dp"
+                                android:layout_height="24dp"
+                                android:layout_marginStart="@dimen/high_margin"
+                                android:padding="4dp"
+                                android:src="@drawable/ic_volume" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/img_copy_target"
+                                android:layout_width="28dp"
+                                android:layout_height="28dp"
+                                android:src="@drawable/ic_copy_with_bg" />
+
+                            <ImageView
+                                android:id="@+id/img_share"
+                                android:layout_width="28dp"
+                                android:layout_height="28dp"
+                                android:layout_marginStart="10dp"
+                                android:src="@drawable/ic_share_with_bg"
+                                tools:ignore="ImageContrastCheck" />
+
+                        </LinearLayout>
+
+                    </RelativeLayout>
 
 
-    </com.google.android.material.card.MaterialCardView>
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/targetText"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:layout_marginVertical="@dimen/normal_margin"
+                        android:background="@color/translated_language_bg"
+                        android:gravity="top"
+                        android:inputType="textMultiLine" />
+
+
+                </LinearLayout>
+
+
+            </com.google.android.material.card.MaterialCardView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
 
 
     <LinearLayout
+        android:id="@+id/layout_bottom"
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:background="@color/white"
         android:weightSum="3"
-        app:layout_constraintBottom_toBottomOf="parent">
+        app:layout_constraintBottom_toTopOf="@+id/cardViewAds">
 
         <LinearLayout
             android:id="@+id/phrases_layout"
@@ -371,6 +385,23 @@
         </LinearLayout>
 
     </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewAds"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="0dp"
+        app:cardElevation="3dp"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <FrameLayout
+            android:id="@+id/frameViewAds"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="visible" />
+
+    </androidx.cardview.widget.CardView>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

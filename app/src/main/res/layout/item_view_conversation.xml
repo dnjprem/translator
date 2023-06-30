@@ -61,9 +61,10 @@
 
                 <View
                     android:layout_width="match_parent"
-                    android:layout_height="1dp"
+                    android:layout_height="0.1dp"
                     android:layout_gravity="center_horizontal"
-                    android:layout_margin="@dimen/normal_margin"
+                    android:layout_marginVertical="@dimen/normal_margin"
+                    android:layout_marginStart="5dp"
                     android:background="@color/setting_view" />
 
                 <LinearLayout
@@ -87,7 +88,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginHorizontal="@dimen/normal_margin"
                         android:ellipsize="end"
-                          
+
                         android:text="Target Text " />
 
                 </LinearLayout>
@@ -159,7 +160,6 @@
             android:layout_marginTop="@dimen/normal_margin"
             android:layout_marginEnd="@dimen/normal_margin"
             android:background="@drawable/drawable_rectangle_right_conversation"
-            android:minWidth="150dp"
             android:orientation="horizontal"
             android:padding="8dp"
             app:layout_constraintEnd_toEndOf="parent"
@@ -196,16 +196,17 @@
                         android:layout_marginHorizontal="@dimen/normal_margin"
                         android:layout_marginStart="@dimen/normal_margin"
                         android:ellipsize="end"
-                          
+
                         android:text="Target Text" />
 
                 </LinearLayout>
 
                 <View
                     android:layout_width="match_parent"
-                    android:layout_height="1dp"
+                    android:layout_height="0.1dp"
                     android:layout_gravity="center_horizontal"
-                    android:layout_margin="@dimen/normal_margin"
+                    android:layout_marginVertical="@dimen/normal_margin"
+                    android:layout_marginStart="5dp"
                     android:background="@color/setting_view" />
 
 
@@ -230,7 +231,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginStart="@dimen/normal_margin"
                         android:ellipsize="end"
-                          
+
                         android:text="Source Text" />
 
                 </LinearLayout>

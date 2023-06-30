@@ -4,14 +4,14 @@
     <string name="translated_text_hint">अनुवादित पाठ</string>
     <string name="unknown_error">अज्ञात त्रुटि हुई।</string>
     <string name="source_text_hint">पाठ दर्ज कीजिए</string>
-    <string name="select_app_language">ऐप भाषा का चयन कीजिए</string>
+    <string name="select_app_language">ऐप भाषा पसंद कीजिए</string>
     <string name="system_default">प्रणालीगत चूक</string>
     <string name="all_language">सारी भाषाएँ</string>
     <string name="text_phrases">मुहावरा</string>
     <string name="text_conversation">बातचीत</string>
     <string name="text_setting">समायोजन</string>
     <string name="text_translate">अनुवाद</string>
-    <string name="text_phrase_book">वाक्यांश पुस्तक</string>
+    <string name="text_phrase_book">वाक्यांश</string>
     <string name="text_essentials">अनिवार्य</string>
     <string name="app_languages">भाषाएँ</string>
     <string name="selected">चयनित</string>
@@ -26,7 +26,7 @@
     <string name="text_tap_mic_button_to_start_conversation">बातचीत शुरू करने के लिए माइक बटन पर टैप करें</string>
     <string name="text_translating">अनुवाद हो रहा है…</string>
     <string name="text_favorite">पसंदीदा</string>
-    <string name="text_select_country">देश का चयन कीजिए</string>
+    <string name="text_select_country">देश पसंद कीजिए</string>
     <string name="text_search">खोज करे</string>
     <string name="text_all_country">सभी देश</string>
     <string name="text_no_country_found">कोई देश नहीं मिला…</string>
@@ -56,10 +56,14 @@
     <string name="text_make_translation_favorite">अपने अनुवादों को पसंदिदा बनाएं</string>
     <string name="text_copied">कॉपी हो चुका है</string>
     <string name="text_not_found">कोई लेख नहीं मिला</string>
-    <string name="text_select_the_country">देश का चयन कीजिए</string>
+    <string name="text_select_the_country">देश पसंद कीजिए</string>
     <string name="text_please_download_language_first">कृपया पहले भाषा डाउनलोड कीजिए</string>
     <string name="text_downloading_start">डाउनलोड करना शुरू कर दिया है</string>
     <string name="text_already_downloaded">पहले से डाउनलोड है</string>
     <string name="text_download_successfully">सफलतापूर्वक डाउनलोड किया गया है</string>
     <string name="text_next">आगे बढ़िए</string>
+    <string name="text_exit_app">ऐप से बाहर निकलें</string>
+    <string name="text_are_you_sure_want_to_exit">क्या आप वाकई इस ऐप से बाहर निकलना चाहते हैं?</string>
+    <string name="text_no">नहीं</string>
+    <string name="text_yes">हाँ</string>
 </resources>
