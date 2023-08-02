@@ -84,8 +84,12 @@ public class HistoryActivity extends AppCompatActivity implements FavoriteClickL
             adapter = new HistoryAdapter(histories, this);
         }
 
-        history_rcv.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false));
+        LinearLayoutManager layoutManager = new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false);
+//        layoutManager.setStackFromEnd(true);
+//        layoutManager.setReverseLayout(true);
+        history_rcv.setLayoutManager(layoutManager);
         history_rcv.setAdapter(adapter);
+//        history_rcv.scrollToPosition(0);
 
 
         img_back.setOnClickListener(view -> {

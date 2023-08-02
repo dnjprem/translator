@@ -15,6 +15,7 @@ import com.voicetranslator.translate.languagetranslator.model.History;
 import com.voicetranslator.translate.languagetranslator.utils.GeneralPreference;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Locale;
 
 public class HistoryAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
@@ -26,6 +27,7 @@ public class HistoryAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder
     private static final int TYPE_ITEM_HISTORY = 1; // for Conversation View
 
     public HistoryAdapter(ArrayList<History> histories,  FavoriteClickListener listener) {
+        Collections.reverse(histories);
         this.histories = GeneralPreference.sortHistories(histories);
         this.listener = listener;
     }

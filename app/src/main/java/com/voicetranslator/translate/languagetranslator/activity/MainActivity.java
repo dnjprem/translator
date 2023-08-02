@@ -42,7 +42,6 @@ import com.google.android.material.button.MaterialButton;
 import com.google.android.material.textfield.TextInputEditText;
 import com.google.mlkit.common.model.RemoteModelManager;
 import com.google.mlkit.nl.translate.TranslateRemoteModel;
-import com.voicetranslator.translate.BuildConfig;
 import com.voicetranslator.translate.R;
 import com.voicetranslator.translate.languagetranslator.Ads.ADCLBAppLoadAds;
 import com.voicetranslator.translate.languagetranslator.database.DataBaseHelper;
@@ -328,7 +327,7 @@ public class MainActivity extends RootActivity {
             shareIntent.setType("text/plain");
             shareIntent.putExtra(Intent.EXTRA_SUBJECT, getString(R.string.app_name));
             String shareMessage = "Translated Text is " + text + " \n\n";
-            shareMessage = (shareMessage + " https://play.google.com/store/apps/details?id=" + BuildConfig.APPLICATION_ID).trim();
+            shareMessage = (shareMessage + " https://play.google.com/store/apps/details?id=" + getPackageName()).trim();
             shareIntent.putExtra(Intent.EXTRA_TEXT, shareMessage);
             startActivity(Intent.createChooser(shareIntent, "Select App"));
         } catch (Exception e) {

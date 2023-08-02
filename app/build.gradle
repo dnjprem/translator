@@ -16,6 +16,12 @@ android {
 
     }
 
+    bundle {
+        language {
+            enableSplit = false
+        }
+    }
+
 //    viewBinding{
 //        enabled true
 //    }
@@ -45,14 +51,11 @@ android {
             path file('src/main/cpp/CMakeLists.txt')
         }
     }
-//    ndkVersion '23.1.7779620'
     ndkVersion '25.2.9519653'
-//    ndkVersion "major.minor.build"
-//    ndkVersion "21.4.7075529"
 }
 
 dependencies {
-//    implementation project(':internal:chooserx')
+
     implementation 'com.google.mlkit:translate:17.0.1'
 
     // Those dependencies are not required by the SDK. They are used for the sample itself.
@@ -73,9 +76,6 @@ dependencies {
     implementation 'com.github.AliAsadi:PowerPreference:2.1.1'
     implementation 'com.facebook.shimmer:shimmer:0.5.0'
     implementation 'com.github.Theophrast:SquareImageView:1.0.1'
-
-    //noinspection LifecycleAnnotationProcessorWithJava8
-//    annotationProcessor 'androidx.lifecycle:lifecycle-compiler:2.6.1'
 
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
     implementation 'com.google.android.gms:play-services-ads:22.1.0'

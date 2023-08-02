@@ -29,6 +29,7 @@
             android:exported="true"
             android:screenOrientation="portrait" />
         <activity
+            android:windowSoftInputMode="adjustNothing"
             android:name="com.voicetranslator.translate.languagetranslator.activity.CountryActivity"
             android:exported="true"
             android:screenOrientation="portrait" />

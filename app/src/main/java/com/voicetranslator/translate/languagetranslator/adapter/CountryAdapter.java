@@ -83,7 +83,6 @@ public class CountryAdapter extends RecyclerView.Adapter<CountryAdapter.MyViewHo
             item.setSelected(false);
         }
         notifyDataSetChanged();
-        ;
     }
 
     @Override
